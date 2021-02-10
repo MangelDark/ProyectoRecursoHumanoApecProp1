@@ -19,7 +19,7 @@ namespace CapaDato.Modelos
         public DataTable Mostrar()
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "MostrarCandidato";
+            comando.CommandText = "";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             table.Load(leer);
@@ -30,25 +30,22 @@ namespace CapaDato.Modelos
         public void Insertar(string cedula, string nombre, string puestoAspira)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "InsertarCandidato";
+            comando.CommandText = "";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@cedula", cedula);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@puestoAspira", puestoAspira);
+            //comando.Parameters.AddWithValue("@", cedula);
+        
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
 
         }
-        public void Editar(int id, string cedula, string nombre, string puestoAspira)
+        public void Editar(int id)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EditarCandidato";
+            comando.CommandText = "";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@cedula", cedula);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@puestoAspira", puestoAspira);
-            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@", id);
+          
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
@@ -57,7 +54,7 @@ namespace CapaDato.Modelos
         public void Eliminar(int id)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EliminarCandidato";
+            comando.CommandText = "";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();
