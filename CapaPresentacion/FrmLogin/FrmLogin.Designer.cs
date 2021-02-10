@@ -150,7 +150,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(329, 245);
+            this.button1.Location = new System.Drawing.Point(329, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(404, 44);
             this.button1.TabIndex = 4;
