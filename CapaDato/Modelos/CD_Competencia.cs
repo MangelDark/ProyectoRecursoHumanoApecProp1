@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaDato.Modelos
 {
-    class CD_Competencia
+    public class CD_Competencia
     {
         private CD_ContentConnection Con = new CD_ContentConnection();
 

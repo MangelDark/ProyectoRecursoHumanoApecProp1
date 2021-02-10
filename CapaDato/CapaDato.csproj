@@ -42,14 +42,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_ContentConnection.cs" />
+    <Compile Include="ConnectionToSql.cs" />
     <Compile Include="Modelos\CD_Candidato.cs" />
     <Compile Include="Modelos\CD_Capacitacion.cs" />
     <Compile Include="Modelos\CD_Competencia.cs" />
     <Compile Include="Modelos\CD_ExperienciaLaboral.cs" />
     <Compile Include="Modelos\CD_Idioma.cs" />
+    <Compile Include="Modelos\CD_Empleado.cs" />
     <Compile Include="Modelos\CD_Puesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TBUsers\UserDao.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6395a30d-024c-4740-a88f-d77de39f24af}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
