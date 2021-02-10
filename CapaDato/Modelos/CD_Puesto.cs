@@ -15,11 +15,10 @@ namespace CapaDato.Modelos
         SqlDataReader leer;
         DataTable table = new DataTable();
         SqlCommand comando = new SqlCommand();
-
         public DataTable Mostrar()
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "MostrarPuesto";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             table.Load(leer);
@@ -27,34 +26,41 @@ namespace CapaDato.Modelos
             return table;
         }
 
-        public void Insertar(string cedula, string nombre, string puestoAspira)
+        public void Insertar(string nombre,double sueldoMaximo, double sueldoMinimo,char nivelRiesgo, int estatus)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "InsertarPuesto";
             comando.CommandType = CommandType.StoredProcedure;
-            //comando.Parameters.AddWithValue("@", cedula);
-
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@sueldoMaximo", sueldoMaximo);
+            comando.Parameters.AddWithValue("@suedloMinimo", sueldoMinimo);
+            comando.Parameters.AddWithValue("@NivelRiesgo", nivelRiesgo);
+            comando.Parameters.AddWithValue("@estatus", estatus);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
 
         }
-        public void Editar(int id)
+        public void Editar(int id, string nombre, double sueldoMaximo, double sueldoMinimo, char nivelRiesgo, int estatus)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "EditarPuesto";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@", id);
+            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@sueldoMaximo", sueldoMaximo);
+            comando.Parameters.AddWithValue("@suedloMinimo", sueldoMinimo);
+            comando.Parameters.AddWithValue("@NivelRiesgo", nivelRiesgo);
+            comando.Parameters.AddWithValue("@estatus", estatus);
 
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
         }
-
         public void Eliminar(int id)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "EliminarPuesto";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();

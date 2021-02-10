@@ -10,7 +10,7 @@ namespace CapaDato
 {
    public class CD_ContentConnection
     {
-        private SqlConnection Conexion = new SqlConnection("Server=(local);DataBase=RHProyectoExoneracion;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Server=(local);DataBase=HR_Management;Integrated Security=true");
 
         public SqlConnection AbriConexion()
         {

@@ -19,7 +19,7 @@ namespace CapaDato.Modelos
         public DataTable Mostrar()
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "MostrarCapacitacione";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             table.Load(leer);
@@ -27,25 +27,33 @@ namespace CapaDato.Modelos
             return table;
         }
 
-        public void Insertar(string cedula, string nombre, string puestoAspira)
+        public void Insertar(string descripcion, char nivelCapacitacion, DateTime fechaDesde,DateTime fechaHasta,string institucionCapacitacion)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "InsertarCapacitacione";
             comando.CommandType = CommandType.StoredProcedure;
-            //comando.Parameters.AddWithValue("@", cedula);
-        
+            comando.Parameters.AddWithValue("@desc_capacitacion", descripcion);
+            comando.Parameters.AddWithValue("@nivel_capacitacion", nivelCapacitacion);
+            comando.Parameters.AddWithValue("@fecha_desde", fechaDesde);
+            comando.Parameters.AddWithValue("@fecha_hasta", fechaHasta);
+            comando.Parameters.AddWithValue("@institucion_capacitacion", institucionCapacitacion);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
 
         }
-        public void Editar(int id)
+        public void Editar(int id, string descripcion, char nivelCapacitacion, DateTime fechaDesde, DateTime fechaHasta, string institucionCapacitacion)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "EditarCapacitacione";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@", id);
-          
+            comando.Parameters.AddWithValue("@desc_capacitacion", descripcion);
+            comando.Parameters.AddWithValue("@nivel_capacitacion", nivelCapacitacion);
+            comando.Parameters.AddWithValue("@fecha_desde", fechaDesde);
+            comando.Parameters.AddWithValue("@fecha_hasta", fechaHasta);
+            comando.Parameters.AddWithValue("@institucion_capacitacion", institucionCapacitacion);
+
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
@@ -54,7 +62,7 @@ namespace CapaDato.Modelos
         public void Eliminar(int id)
         {
             comando.Connection = Con.AbriConexion();
-            comando.CommandText = "";
+            comando.CommandText = "EliminarCapacitacione";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();
