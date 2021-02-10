@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLoginUI));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -42,7 +43,7 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.linkpass = new System.Windows.Forms.LinkLabel();
             this.lbError = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -52,9 +53,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(65, 87);
+            this.pictureBox3.Location = new System.Drawing.Point(40, 107);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox3.Size = new System.Drawing.Size(157, 145);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -62,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -70,6 +72,18 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(-1, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(245, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Sistemas Recurso Humano";
             // 
             // txtPass
             // 
@@ -150,11 +164,11 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Industry-Bold", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(445, 9);
+            this.label1.Location = new System.Drawing.Point(361, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 56);
+            this.label1.Size = new System.Drawing.Size(341, 56);
             this.label1.TabIndex = 5;
-            this.label1.Text = "SIGN IN";
+            this.label1.Text = "INICIAR SESIÓN";
             // 
             // btnminimizar
             // 
@@ -205,17 +219,17 @@
             this.lbError.Text = "ErrorMessage";
             this.lbError.Visible = false;
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(2, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(245, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Sistemas Recurso Humano";
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(25, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Proyecto exoneración\r\n";
             // 
             // FrmLoginUI
             // 
@@ -264,5 +278,6 @@
         private System.Windows.Forms.LinkLabel linkpass;
         private System.Windows.Forms.Label lbError;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
