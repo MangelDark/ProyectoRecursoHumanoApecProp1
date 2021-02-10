@@ -42,6 +42,7 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.linkpass = new System.Windows.Forms.LinkLabel();
             this.lbError = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -51,7 +52,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(59, 118);
+            this.pictureBox3.Location = new System.Drawing.Point(65, 87);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(114, 90);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -203,6 +205,18 @@
             this.lbError.Text = "ErrorMessage";
             this.lbError.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(2, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(245, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Sistemas Recurso Humano";
+            // 
             // FrmLoginUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +240,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.ResumeLayout(false);
@@ -248,5 +263,6 @@
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.LinkLabel linkpass;
         private System.Windows.Forms.Label lbError;
+        private System.Windows.Forms.Label label2;
     }
 }
