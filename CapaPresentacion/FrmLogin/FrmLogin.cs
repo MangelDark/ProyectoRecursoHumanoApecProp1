@@ -128,9 +128,9 @@ namespace CapaPresentacion.FrmLogin
         }
         private void Logout(object sender, FormClosedEventArgs e)
         {
-            txtPass.Text = "Password";
+            txtPass.Text = "Contraseña";          
             txtPass.UseSystemPasswordChar = false;
-            txtUser.Text = "Username";
+            txtUser.Text = "Usuario";
             lbError.Visible = false;
             this.Show();
         }

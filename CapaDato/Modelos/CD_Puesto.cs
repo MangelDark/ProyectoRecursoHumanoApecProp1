@@ -25,7 +25,6 @@ namespace CapaDato.Modelos
             Con.CerrarConexion();
             return table;
         }
-
         public void Insertar(string nombre,double sueldoMaximo, double sueldoMinimo,char nivelRiesgo, int estatus)
         {
             comando.Connection = Con.AbriConexion();
@@ -38,8 +37,6 @@ namespace CapaDato.Modelos
             comando.Parameters.AddWithValue("@estatus", estatus);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
-
-
         }
         public void Editar(int id, string nombre, double sueldoMaximo, double sueldoMinimo, char nivelRiesgo, int estatus)
         {

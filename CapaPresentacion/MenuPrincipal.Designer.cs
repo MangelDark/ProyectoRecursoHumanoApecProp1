@@ -30,50 +30,76 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelBarra = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximized = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnCapacitacion = new System.Windows.Forms.Button();
+            this.btnCompetencia = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbtitulo = new System.Windows.Forms.Label();
+            this.btnPuesto = new System.Windows.Forms.Button();
+            this.btnExperienciaLaboral = new System.Windows.Forms.Button();
+            this.btnIdioma = new System.Windows.Forms.Button();
+            this.lbPosition = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbLastName = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.panelTitulo = new System.Windows.Forms.Panel();
+            this.panelUserInformacion = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBarra.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.panelMenu.SuspendLayout();
-            this.panelPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTitulo.SuspendLayout();
+            this.panelUserInformacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarra
             // 
-            this.panelBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(35)))));
-            this.panelBarra.Controls.Add(this.btnminimizar);
-            this.panelBarra.Controls.Add(this.btncerrar);
+            this.panelBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(45)))));
+            this.panelBarra.Controls.Add(this.panel2);
             this.panelBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarra.Location = new System.Drawing.Point(0, 0);
             this.panelBarra.Name = "panelBarra";
-            this.panelBarra.Size = new System.Drawing.Size(1000, 32);
+            this.panelBarra.Size = new System.Drawing.Size(1100, 32);
             this.panelBarra.TabIndex = 0;
             this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarra_MouseDown);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnminimizar);
+            this.panel2.Controls.Add(this.btnMaximized);
+            this.panel2.Controls.Add(this.btncerrar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(920, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(180, 32);
+            this.panel2.TabIndex = 8;
             // 
             // btnminimizar
             // 
             this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
-            this.btnminimizar.Location = new System.Drawing.Point(954, 4);
+            this.btnminimizar.Location = new System.Drawing.Point(100, 5);
             this.btnminimizar.Name = "btnminimizar";
             this.btnminimizar.Size = new System.Drawing.Size(20, 23);
             this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -81,14 +107,25 @@
             this.btnminimizar.TabStop = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
+            // btnMaximized
+            // 
+            this.btnMaximized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximized.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximized.Image")));
+            this.btnMaximized.Location = new System.Drawing.Point(128, 5);
+            this.btnMaximized.Name = "btnMaximized";
+            this.btnMaximized.Size = new System.Drawing.Size(20, 23);
+            this.btnMaximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximized.TabIndex = 13;
+            this.btnMaximized.TabStop = false;
+            this.btnMaximized.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // btncerrar
             // 
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncerrar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(980, 0);
+            this.btncerrar.Location = new System.Drawing.Point(154, 5);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(20, 32);
+            this.btncerrar.Size = new System.Drawing.Size(20, 23);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncerrar.TabIndex = 11;
             this.btncerrar.TabStop = false;
@@ -96,233 +133,348 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.panelMenu.Controls.Add(this.button6);
-            this.panelMenu.Controls.Add(this.button5);
-            this.panelMenu.Controls.Add(this.button4);
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnCerrarSesion);
+            this.panelMenu.Controls.Add(this.btnCapacitacion);
+            this.panelMenu.Controls.Add(this.btnCompetencia);
             this.panelMenu.Controls.Add(this.panel1);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnPuesto);
+            this.panelMenu.Controls.Add(this.btnExperienciaLaboral);
+            this.panelMenu.Controls.Add(this.btnIdioma);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 32);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 627);
             this.panelMenu.TabIndex = 1;
             // 
-            // panelPrincipal
+            // btnCerrarSesion
             // 
-            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.panelPrincipal.Controls.Add(this.label4);
-            this.panelPrincipal.Controls.Add(this.shapeContainer1);
-            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(200, 32);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(800, 627);
-            this.panelPrincipal.TabIndex = 1;
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Silver;
+            this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 578);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(200, 49);
+            this.btnCerrarSesion.TabIndex = 5;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button1
+            // btnCapacitacion
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Capacitaciones";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCapacitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCapacitacion.FlatAppearance.BorderSize = 0;
+            this.btnCapacitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapacitacion.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapacitacion.ForeColor = System.Drawing.Color.Silver;
+            this.btnCapacitacion.Image = ((System.Drawing.Image)(resources.GetObject("btnCapacitacion.Image")));
+            this.btnCapacitacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapacitacion.Location = new System.Drawing.Point(2, 93);
+            this.btnCapacitacion.Name = "btnCapacitacion";
+            this.btnCapacitacion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCapacitacion.Size = new System.Drawing.Size(198, 63);
+            this.btnCapacitacion.TabIndex = 0;
+            this.btnCapacitacion.Text = "Capacitaciones";
+            this.btnCapacitacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapacitacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapacitacion.UseVisualStyleBackColor = false;
+            this.btnCapacitacion.Click += new System.EventHandler(this.btnCapacitacion_Click);
+            // 
+            // btnCompetencia
+            // 
+            this.btnCompetencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCompetencia.FlatAppearance.BorderSize = 0;
+            this.btnCompetencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompetencia.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompetencia.ForeColor = System.Drawing.Color.Silver;
+            this.btnCompetencia.Image = ((System.Drawing.Image)(resources.GetObject("btnCompetencia.Image")));
+            this.btnCompetencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompetencia.Location = new System.Drawing.Point(1, 159);
+            this.btnCompetencia.Name = "btnCompetencia";
+            this.btnCompetencia.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCompetencia.Size = new System.Drawing.Size(200, 63);
+            this.btnCompetencia.TabIndex = 1;
+            this.btnCompetencia.Text = "Competencias";
+            this.btnCompetencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCompetencia.UseVisualStyleBackColor = false;
+            this.btnCompetencia.Click += new System.EventHandler(this.btnCompetencia_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.lbtitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 96);
+            this.panel1.Size = new System.Drawing.Size(200, 74);
             this.panel1.TabIndex = 0;
             // 
-            // button2
+            // label5
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 159);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Competencias";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Silver;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 221);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 63);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Experiencia Laboral";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Silver;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 283);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 63);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Idiomas";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Silver;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(1, 345);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 63);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Puestos";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(87, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(87, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "LastName";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Silver;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 588);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 39);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Cerrar sesión";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Industry-Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(88, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "TypeUsers";
+            this.label5.AutoSize = true;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(72, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(122, 17);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Recursos Humanos";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Industry-Bold", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(86, 12);
+            this.label4.Location = new System.Drawing.Point(117, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(662, 56);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Sistemas de Recursos Humanos";
+            this.label4.Size = new System.Drawing.Size(24, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "De";
             // 
-            // shapeContainer1
+            // pictureBox3
             // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(800, 627);
-            this.shapeContainer1.TabIndex = 7;
-            this.shapeContainer1.TabStop = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 56);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // lineShape1
+            // lbtitulo
             // 
-            this.lineShape1.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape1.BorderWidth = 3;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 0;
-            this.lineShape1.X2 = 800;
-            this.lineShape1.Y1 = 69;
-            this.lineShape1.Y2 = 69;
+            this.lbtitulo.AutoSize = true;
+            this.lbtitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbtitulo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulo.ForeColor = System.Drawing.Color.Silver;
+            this.lbtitulo.Location = new System.Drawing.Point(101, 8);
+            this.lbtitulo.Name = "lbtitulo";
+            this.lbtitulo.Size = new System.Drawing.Size(57, 17);
+            this.lbtitulo.TabIndex = 6;
+            this.lbtitulo.Text = "Sistema";
+            // 
+            // btnPuesto
+            // 
+            this.btnPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnPuesto.FlatAppearance.BorderSize = 0;
+            this.btnPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuesto.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuesto.ForeColor = System.Drawing.Color.Silver;
+            this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
+            this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuesto.Location = new System.Drawing.Point(1, 358);
+            this.btnPuesto.Name = "btnPuesto";
+            this.btnPuesto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnPuesto.Size = new System.Drawing.Size(200, 63);
+            this.btnPuesto.TabIndex = 4;
+            this.btnPuesto.Text = "Puestos";
+            this.btnPuesto.UseVisualStyleBackColor = false;
+            this.btnPuesto.Click += new System.EventHandler(this.btnPuesto_Click);
+            // 
+            // btnExperienciaLaboral
+            // 
+            this.btnExperienciaLaboral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnExperienciaLaboral.FlatAppearance.BorderSize = 0;
+            this.btnExperienciaLaboral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExperienciaLaboral.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExperienciaLaboral.ForeColor = System.Drawing.Color.Silver;
+            this.btnExperienciaLaboral.Image = ((System.Drawing.Image)(resources.GetObject("btnExperienciaLaboral.Image")));
+            this.btnExperienciaLaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExperienciaLaboral.Location = new System.Drawing.Point(1, 225);
+            this.btnExperienciaLaboral.Name = "btnExperienciaLaboral";
+            this.btnExperienciaLaboral.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnExperienciaLaboral.Size = new System.Drawing.Size(200, 63);
+            this.btnExperienciaLaboral.TabIndex = 2;
+            this.btnExperienciaLaboral.Text = "Experiencia Lab.";
+            this.btnExperienciaLaboral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExperienciaLaboral.UseVisualStyleBackColor = false;
+            this.btnExperienciaLaboral.Click += new System.EventHandler(this.btnExperienciaLaboral_Click);
+            // 
+            // btnIdioma
+            // 
+            this.btnIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnIdioma.FlatAppearance.BorderSize = 0;
+            this.btnIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIdioma.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIdioma.ForeColor = System.Drawing.Color.Silver;
+            this.btnIdioma.Image = ((System.Drawing.Image)(resources.GetObject("btnIdioma.Image")));
+            this.btnIdioma.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIdioma.Location = new System.Drawing.Point(1, 292);
+            this.btnIdioma.Name = "btnIdioma";
+            this.btnIdioma.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnIdioma.Size = new System.Drawing.Size(200, 63);
+            this.btnIdioma.TabIndex = 3;
+            this.btnIdioma.Text = "Idiomas";
+            this.btnIdioma.UseVisualStyleBackColor = false;
+            this.btnIdioma.Click += new System.EventHandler(this.btnIdioma_Click);
+            // 
+            // lbPosition
+            // 
+            this.lbPosition.AutoSize = true;
+            this.lbPosition.Font = new System.Drawing.Font("Industry-Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPosition.ForeColor = System.Drawing.Color.Silver;
+            this.lbPosition.Location = new System.Drawing.Point(65, 8);
+            this.lbPosition.Name = "lbPosition";
+            this.lbPosition.Size = new System.Drawing.Size(87, 21);
+            this.lbPosition.TabIndex = 3;
+            this.lbPosition.Text = "TypeUsers";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbLastName
+            // 
+            this.lbLastName.AutoSize = true;
+            this.lbLastName.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLastName.ForeColor = System.Drawing.Color.Silver;
+            this.lbLastName.Location = new System.Drawing.Point(66, 46);
+            this.lbLastName.Name = "lbLastName";
+            this.lbLastName.Size = new System.Drawing.Size(68, 16);
+            this.lbLastName.TabIndex = 1;
+            this.lbLastName.Text = "LastName";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.ForeColor = System.Drawing.Color.Silver;
+            this.lbName.Location = new System.Drawing.Point(66, 29);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(42, 16);
+            this.lbName.TabIndex = 0;
+            this.lbName.Text = "Name";
+            // 
+            // panelPrincipal
+            // 
+            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPrincipal.Location = new System.Drawing.Point(200, 104);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.panelPrincipal.Size = new System.Drawing.Size(900, 555);
+            this.panelPrincipal.TabIndex = 1;
+            this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
+            // 
+            // panelTitulo
+            // 
+            this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelTitulo.Controls.Add(this.panelUserInformacion);
+            this.panelTitulo.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitulo.Controls.Add(this.lblTitleChildForm);
+            this.panelTitulo.Controls.Add(this.pictureBox2);
+            this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitulo.Location = new System.Drawing.Point(200, 32);
+            this.panelTitulo.Name = "panelTitulo";
+            this.panelTitulo.Size = new System.Drawing.Size(900, 72);
+            this.panelTitulo.TabIndex = 8;
+            this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
+            // 
+            // panelUserInformacion
+            // 
+            this.panelUserInformacion.Controls.Add(this.pictureBox4);
+            this.panelUserInformacion.Controls.Add(this.lbLastName);
+            this.panelUserInformacion.Controls.Add(this.pictureBox1);
+            this.panelUserInformacion.Controls.Add(this.lbPosition);
+            this.panelUserInformacion.Controls.Add(this.lbName);
+            this.panelUserInformacion.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelUserInformacion.Location = new System.Drawing.Point(665, 0);
+            this.panelUserInformacion.Name = "panelUserInformacion";
+            this.panelUserInformacion.Size = new System.Drawing.Size(235, 72);
+            this.panelUserInformacion.TabIndex = 4;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(192, 21);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.Image = ((System.Drawing.Image)(resources.GetObject("iconCurrentChildForm.Image")));
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(13, 21);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(37, 34);
+            this.iconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconCurrentChildForm.TabIndex = 6;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Silver;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(54, 30);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(48, 21);
+            this.lblTitleChildForm.TabIndex = 5;
+            this.lblTitleChildForm.Text = "Inicio";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(13, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 659);
+            this.ClientSize = new System.Drawing.Size(1100, 659);
             this.Controls.Add(this.panelPrincipal);
+            this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelBarra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuPrincipal";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelBarra.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.panelMenu.ResumeLayout(false);
-            this.panelPrincipal.ResumeLayout(false);
-            this.panelPrincipal.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTitulo.ResumeLayout(false);
+            this.panelTitulo.PerformLayout();
+            this.panelUserInformacion.ResumeLayout(false);
+            this.panelUserInformacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,20 +486,29 @@
         private System.Windows.Forms.Panel panelPrincipal;
         private System.Windows.Forms.PictureBox btnminimizar;
         private System.Windows.Forms.PictureBox btncerrar;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnPuesto;
+        private System.Windows.Forms.Button btnIdioma;
+        private System.Windows.Forms.Button btnExperienciaLaboral;
+        private System.Windows.Forms.Button btnCompetencia;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbLastName;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Button btnCapacitacion;
+        private System.Windows.Forms.Label lbPosition;
+        private System.Windows.Forms.Label lbtitulo;
+        private System.Windows.Forms.Panel panelTitulo;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.PictureBox iconCurrentChildForm;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnMaximized;
+        private System.Windows.Forms.Panel panelUserInformacion;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using CapaDato.TBUsers;
+using Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,19 @@ namespace CapaNegocio.DTOUser
         public bool LoginUser(string user,string pass)
         {
             return userDao.Login(user,pass);
+        }
+
+        public void AnyMethod()
+        {
+            //Security and Permision 
+            if (UserCache.Position == Positions.Administrator)
+            {
+                //Codes
+            }
+            if (UserCache.Position == Positions.Receptionist || UserCache.Position == Positions.Accounting)
+            {
+                //Codes
+            }
         }
     }
 }

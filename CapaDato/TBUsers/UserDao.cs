@@ -47,5 +47,16 @@ namespace CapaDato.TBUsers
                 }
             }
         }
+        public void AnyMethod()
+        {
+            if (UserCache.Position == Positions.Administrator)
+            {
+                    //Codes
+            }
+            if (UserCache.Position == Positions.Receptionist || UserCache.Position == Positions.Accounting) 
+            {
+                   //Codes
+            }
+        }
     }
 }
