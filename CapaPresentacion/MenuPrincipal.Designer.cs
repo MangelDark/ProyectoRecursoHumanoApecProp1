@@ -57,6 +57,8 @@
             this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCandidato = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelBarra.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -134,6 +136,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnCandidato);
             this.panelMenu.Controls.Add(this.btnCerrarSesion);
             this.panelMenu.Controls.Add(this.btnCapacitacion);
             this.panelMenu.Controls.Add(this.btnCompetencia);
@@ -444,6 +448,40 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
+            // btnCandidato
+            // 
+            this.btnCandidato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCandidato.FlatAppearance.BorderSize = 0;
+            this.btnCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCandidato.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCandidato.ForeColor = System.Drawing.Color.Silver;
+            this.btnCandidato.Image = ((System.Drawing.Image)(resources.GetObject("btnCandidato.Image")));
+            this.btnCandidato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCandidato.Location = new System.Drawing.Point(1, 424);
+            this.btnCandidato.Name = "btnCandidato";
+            this.btnCandidato.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCandidato.Size = new System.Drawing.Size(200, 63);
+            this.btnCandidato.TabIndex = 6;
+            this.btnCandidato.Text = "Candidatos";
+            this.btnCandidato.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Silver;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1, 493);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.button1.Size = new System.Drawing.Size(200, 63);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Empleados";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,6 +546,8 @@
         private System.Windows.Forms.PictureBox btnMaximized;
         private System.Windows.Forms.Panel panelUserInformacion;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCandidato;
     }
 }
 
