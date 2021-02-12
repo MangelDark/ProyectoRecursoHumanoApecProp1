@@ -240,5 +240,12 @@ namespace CapaPresentacion
         {
           
         }
+
+        private void btnCandidato_Click(object sender, EventArgs e)
+        {
+            FrmCandidato frmCandidato = new FrmCandidato();
+            OpenChildForm(frmCandidato);
+            ActivateButton(sender, RGBColors.color2);
+        }
     }
 }
