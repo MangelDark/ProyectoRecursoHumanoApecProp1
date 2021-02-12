@@ -16,5 +16,10 @@ namespace CapaPresentacion.FrmMantenimientos
         {
             InitializeComponent();
         }
+
+        private void panelCampos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

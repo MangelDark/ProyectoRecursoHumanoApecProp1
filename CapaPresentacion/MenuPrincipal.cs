@@ -33,7 +33,7 @@ namespace CapaPresentacion
             //this.ControlBox = false;
             //this.DoubleBuffered = true;
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            
+
         }
         //Structs
         private struct RGBColors
@@ -173,11 +173,16 @@ namespace CapaPresentacion
         }
         private void btnCompetencia_Click(object sender, EventArgs e)
         {
+            FrmCompetencia frmCompetencia = new FrmCompetencia();
+            OpenChildForm(frmCompetencia);
             ActivateButton(sender, RGBColors.color2);
         }
         private void btnExperienciaLaboral_Click(object sender, EventArgs e)
         {
+            FrmExperienciaLaboral frmExperienciaLaboral = new FrmExperienciaLaboral();
+            OpenChildForm(frmExperienciaLaboral);
             ActivateButton(sender, RGBColors.color3);
+
         }
         private void btnIdioma_Click(object sender, EventArgs e)
         {
