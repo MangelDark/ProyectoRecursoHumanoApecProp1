@@ -39,11 +39,11 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panelCampos = new System.Windows.Forms.Panel();
-            this.cboxNivelRiesgoPuesto = new System.Windows.Forms.ComboBox();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cboxNivelRiesgoPuesto = new System.Windows.Forms.ComboBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -73,7 +73,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 69);
+            this.label2.Location = new System.Drawing.Point(16, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 20);
             this.label2.TabIndex = 1;
@@ -84,7 +84,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(316, 74);
+            this.label3.Location = new System.Drawing.Point(316, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 20);
             this.label3.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(316, 18);
+            this.label4.Location = new System.Drawing.Point(312, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(174, 20);
             this.label4.TabIndex = 3;
@@ -119,7 +119,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(498, 68);
+            this.textBox3.Location = new System.Drawing.Point(499, 86);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(120, 21);
             this.textBox3.TabIndex = 7;
@@ -139,7 +139,7 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(20, 125);
             this.groupBox1.Name = "groupBox1";
@@ -153,7 +153,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(129, 33);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 20);
+            this.radioButton2.Size = new System.Drawing.Size(80, 24);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Inactivo";
@@ -164,7 +164,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(21, 33);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 20);
+            this.radioButton1.Size = new System.Drawing.Size(70, 24);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo";
@@ -173,8 +173,8 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.panelCampos.Controls.Add(this.cboxNivelRiesgoPuesto);
             this.panelCampos.Controls.Add(this.panelButtons);
+            this.panelCampos.Controls.Add(this.cboxNivelRiesgoPuesto);
             this.panelCampos.Controls.Add(this.label2);
             this.panelCampos.Controls.Add(this.lbNombre);
             this.panelCampos.Controls.Add(this.groupBox1);
@@ -188,19 +188,8 @@
             this.panelCampos.ForeColor = System.Drawing.Color.White;
             this.panelCampos.Location = new System.Drawing.Point(0, 0);
             this.panelCampos.Name = "panelCampos";
-            this.panelCampos.Size = new System.Drawing.Size(883, 217);
+            this.panelCampos.Size = new System.Drawing.Size(883, 233);
             this.panelCampos.TabIndex = 12;
-            // 
-            // cboxNivelRiesgoPuesto
-            // 
-            this.cboxNivelRiesgoPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.cboxNivelRiesgoPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboxNivelRiesgoPuesto.ForeColor = System.Drawing.Color.White;
-            this.cboxNivelRiesgoPuesto.FormattingEnabled = true;
-            this.cboxNivelRiesgoPuesto.Location = new System.Drawing.Point(180, 71);
-            this.cboxNivelRiesgoPuesto.Name = "cboxNivelRiesgoPuesto";
-            this.cboxNivelRiesgoPuesto.Size = new System.Drawing.Size(121, 21);
-            this.cboxNivelRiesgoPuesto.TabIndex = 14;
             // 
             // panelButtons
             // 
@@ -210,8 +199,8 @@
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelButtons.Location = new System.Drawing.Point(625, 0);
             this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(258, 217);
-            this.panelButtons.TabIndex = 12;
+            this.panelButtons.Size = new System.Drawing.Size(258, 233);
+            this.panelButtons.TabIndex = 15;
             // 
             // btnDelete
             // 
@@ -224,7 +213,7 @@
             this.btnDelete.Location = new System.Drawing.Point(19, 145);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnDelete.Size = new System.Drawing.Size(243, 56);
+            this.btnDelete.Size = new System.Drawing.Size(227, 56);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,7 +231,7 @@
             this.btnClear.Location = new System.Drawing.Point(19, 79);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnClear.Size = new System.Drawing.Size(243, 56);
+            this.btnClear.Size = new System.Drawing.Size(227, 56);
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "Limpiar Campos";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -260,12 +249,23 @@
             this.btnSave.Location = new System.Drawing.Point(19, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSave.Size = new System.Drawing.Size(243, 56);
+            this.btnSave.Size = new System.Drawing.Size(227, 56);
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Guardar";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // cboxNivelRiesgoPuesto
+            // 
+            this.cboxNivelRiesgoPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.cboxNivelRiesgoPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboxNivelRiesgoPuesto.ForeColor = System.Drawing.Color.White;
+            this.cboxNivelRiesgoPuesto.FormattingEnabled = true;
+            this.cboxNivelRiesgoPuesto.Location = new System.Drawing.Point(180, 84);
+            this.cboxNivelRiesgoPuesto.Name = "cboxNivelRiesgoPuesto";
+            this.cboxNivelRiesgoPuesto.Size = new System.Drawing.Size(121, 21);
+            this.cboxNivelRiesgoPuesto.TabIndex = 14;
             // 
             // shapeContainer1
             // 
@@ -276,7 +276,7 @@
             this.lineShape2,
             this.lineShape4,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(883, 217);
+            this.shapeContainer1.Size = new System.Drawing.Size(883, 233);
             this.shapeContainer1.TabIndex = 13;
             this.shapeContainer1.TabStop = false;
             // 
@@ -287,8 +287,8 @@
             this.lineShape2.Name = "lineShape2";
             this.lineShape2.X1 = 497;
             this.lineShape2.X2 = 618;
-            this.lineShape2.Y1 = 91;
-            this.lineShape2.Y2 = 91;
+            this.lineShape2.Y1 = 111;
+            this.lineShape2.Y2 = 111;
             // 
             // lineShape4
             // 
@@ -314,9 +314,9 @@
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 217);
+            this.panel1.Location = new System.Drawing.Point(0, 233);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 318);
+            this.panel1.Size = new System.Drawing.Size(883, 302);
             this.panel1.TabIndex = 13;
             // 
             // dataGridView1
@@ -325,7 +325,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(883, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(883, 302);
             this.dataGridView1.TabIndex = 0;
             // 
             // FrmPuesto
@@ -364,10 +364,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panelCampos;
-        private System.Windows.Forms.Panel panelButtons;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSave;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.ComboBox cboxNivelRiesgoPuesto;
@@ -375,5 +371,9 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panelButtons;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSave;
     }
 }

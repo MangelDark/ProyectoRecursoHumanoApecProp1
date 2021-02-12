@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion.FrmMantenimientos
 {
-    partial class FrmCandidato
+    partial class FrmTest
     {
         /// <summary>
         /// Required designer variable.
@@ -73,8 +73,8 @@
             this.panelCampos.ForeColor = System.Drawing.Color.White;
             this.panelCampos.Location = new System.Drawing.Point(0, 0);
             this.panelCampos.Name = "panelCampos";
-            this.panelCampos.Size = new System.Drawing.Size(900, 217);
-            this.panelCampos.TabIndex = 16;
+            this.panelCampos.Size = new System.Drawing.Size(800, 217);
+            this.panelCampos.TabIndex = 17;
             // 
             // cboxNivelRiesgoPuesto
             // 
@@ -93,7 +93,7 @@
             this.panelButtons.Controls.Add(this.button2);
             this.panelButtons.Controls.Add(this.button1);
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelButtons.Location = new System.Drawing.Point(642, 0);
+            this.panelButtons.Location = new System.Drawing.Point(542, 0);
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(258, 217);
             this.panelButtons.TabIndex = 12;
@@ -178,7 +178,7 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(20, 125);
             this.groupBox1.Name = "groupBox1";
@@ -192,7 +192,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(129, 33);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 24);
+            this.radioButton2.Size = new System.Drawing.Size(73, 20);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Inactivo";
@@ -203,7 +203,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(21, 33);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 24);
+            this.radioButton1.Size = new System.Drawing.Size(64, 20);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo";
@@ -273,7 +273,7 @@
             this.lineShape2,
             this.lineShape4,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(900, 217);
+            this.shapeContainer1.Size = new System.Drawing.Size(800, 217);
             this.shapeContainer1.TabIndex = 13;
             this.shapeContainer1.TabStop = false;
             // 
@@ -313,19 +313,18 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 217);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(900, 338);
-            this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 233);
+            this.dataGridView1.TabIndex = 18;
             // 
-            // FrmCandidato
+            // FrmTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 555);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelCampos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmCandidato";
-            this.Text = "FrmCandidato";
+            this.Name = "FrmTest";
+            this.Text = "FrmTest";
             this.panelCampos.ResumeLayout(false);
             this.panelCampos.PerformLayout();
             this.panelButtons.ResumeLayout(false);

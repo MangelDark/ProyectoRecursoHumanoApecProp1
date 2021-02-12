@@ -371,7 +371,6 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(200, 104);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.panelPrincipal.Size = new System.Drawing.Size(900, 555);
             this.panelPrincipal.TabIndex = 1;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);

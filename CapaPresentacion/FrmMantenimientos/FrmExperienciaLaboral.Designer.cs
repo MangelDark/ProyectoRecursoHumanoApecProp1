@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.lbPuestoError = new System.Windows.Forms.Label();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.lbNombre = new System.Windows.Forms.Label();
             this.groupBoxExperienciaLab = new System.Windows.Forms.GroupBox();
+            this.lbHastaError = new System.Windows.Forms.Label();
+            this.lbDesdeError = new System.Windows.Forms.Label();
             this.dateTimeHasta = new System.Windows.Forms.DateTimePicker();
             this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,16 +47,19 @@
             this.txtPuestoOcupado = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.groupBoxExperienciaLab.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.lbPuestoError);
             this.panelCampos.Controls.Add(this.panelButtons);
             this.panelCampos.Controls.Add(this.lbNombre);
             this.panelCampos.Controls.Add(this.groupBoxExperienciaLab);
@@ -65,6 +71,18 @@
             this.panelCampos.Name = "panelCampos";
             this.panelCampos.Size = new System.Drawing.Size(900, 217);
             this.panelCampos.TabIndex = 14;
+            // 
+            // lbPuestoError
+            // 
+            this.lbPuestoError.AutoSize = true;
+            this.lbPuestoError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPuestoError.ForeColor = System.Drawing.Color.Red;
+            this.lbPuestoError.Location = new System.Drawing.Point(145, 183);
+            this.lbPuestoError.Name = "lbPuestoError";
+            this.lbPuestoError.Size = new System.Drawing.Size(109, 20);
+            this.lbPuestoError.TabIndex = 13;
+            this.lbPuestoError.Text = "ErrorMessage";
+            this.lbPuestoError.Visible = false;
             // 
             // panelButtons
             // 
@@ -136,7 +154,7 @@
             this.lbNombre.AutoSize = true;
             this.lbNombre.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.ForeColor = System.Drawing.Color.White;
-            this.lbNombre.Location = new System.Drawing.Point(16, 18);
+            this.lbNombre.Location = new System.Drawing.Point(10, 15);
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(131, 20);
             this.lbNombre.TabIndex = 0;
@@ -144,29 +162,55 @@
             // 
             // groupBoxExperienciaLab
             // 
+            this.groupBoxExperienciaLab.Controls.Add(this.lbHastaError);
+            this.groupBoxExperienciaLab.Controls.Add(this.lbDesdeError);
             this.groupBoxExperienciaLab.Controls.Add(this.dateTimeHasta);
             this.groupBoxExperienciaLab.Controls.Add(this.dateTimeDesde);
             this.groupBoxExperienciaLab.Controls.Add(this.label4);
             this.groupBoxExperienciaLab.Controls.Add(this.label3);
             this.groupBoxExperienciaLab.Controls.Add(this.textBox4);
             this.groupBoxExperienciaLab.Controls.Add(this.textBox3);
-            this.groupBoxExperienciaLab.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxExperienciaLab.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxExperienciaLab.ForeColor = System.Drawing.Color.White;
-            this.groupBoxExperienciaLab.Location = new System.Drawing.Point(333, 18);
+            this.groupBoxExperienciaLab.Location = new System.Drawing.Point(333, 10);
             this.groupBoxExperienciaLab.Name = "groupBoxExperienciaLab";
-            this.groupBoxExperienciaLab.Size = new System.Drawing.Size(303, 142);
+            this.groupBoxExperienciaLab.Size = new System.Drawing.Size(303, 175);
             this.groupBoxExperienciaLab.TabIndex = 10;
             this.groupBoxExperienciaLab.TabStop = false;
             this.groupBoxExperienciaLab.Text = "Experiencia Laboral";
+            // 
+            // lbHastaError
+            // 
+            this.lbHastaError.AutoSize = true;
+            this.lbHastaError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHastaError.ForeColor = System.Drawing.Color.Red;
+            this.lbHastaError.Location = new System.Drawing.Point(66, 143);
+            this.lbHastaError.Name = "lbHastaError";
+            this.lbHastaError.Size = new System.Drawing.Size(109, 20);
+            this.lbHastaError.TabIndex = 12;
+            this.lbHastaError.Text = "ErrorMessage";
+            this.lbHastaError.Visible = false;
+            // 
+            // lbDesdeError
+            // 
+            this.lbDesdeError.AutoSize = true;
+            this.lbDesdeError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDesdeError.ForeColor = System.Drawing.Color.Red;
+            this.lbDesdeError.Location = new System.Drawing.Point(66, 69);
+            this.lbDesdeError.Name = "lbDesdeError";
+            this.lbDesdeError.Size = new System.Drawing.Size(109, 20);
+            this.lbDesdeError.TabIndex = 11;
+            this.lbDesdeError.Text = "ErrorMessage";
+            this.lbDesdeError.Visible = false;
             // 
             // dateTimeHasta
             // 
             this.dateTimeHasta.CalendarForeColor = System.Drawing.Color.White;
             this.dateTimeHasta.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.dateTimeHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeHasta.Location = new System.Drawing.Point(66, 81);
+            this.dateTimeHasta.Location = new System.Drawing.Point(66, 107);
             this.dateTimeHasta.Name = "dateTimeHasta";
-            this.dateTimeHasta.Size = new System.Drawing.Size(200, 24);
+            this.dateTimeHasta.Size = new System.Drawing.Size(200, 27);
             this.dateTimeHasta.TabIndex = 10;
             // 
             // dateTimeDesde
@@ -175,7 +219,7 @@
             this.dateTimeDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeDesde.Location = new System.Drawing.Point(66, 32);
             this.dateTimeDesde.Name = "dateTimeDesde";
-            this.dateTimeDesde.Size = new System.Drawing.Size(200, 24);
+            this.dateTimeDesde.Size = new System.Drawing.Size(200, 27);
             this.dateTimeDesde.TabIndex = 9;
             // 
             // label4
@@ -194,7 +238,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(6, 85);
+            this.label3.Location = new System.Drawing.Point(6, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 2;
@@ -228,10 +272,10 @@
             this.txtPuestoOcupado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuestoOcupado.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuestoOcupado.ForeColor = System.Drawing.Color.White;
-            this.txtPuestoOcupado.Location = new System.Drawing.Point(148, 13);
+            this.txtPuestoOcupado.Location = new System.Drawing.Point(148, 27);
             this.txtPuestoOcupado.Multiline = true;
             this.txtPuestoOcupado.Name = "txtPuestoOcupado";
-            this.txtPuestoOcupado.Size = new System.Drawing.Size(158, 20);
+            this.txtPuestoOcupado.Size = new System.Drawing.Size(158, 132);
             this.txtPuestoOcupado.TabIndex = 5;
             // 
             // shapeContainer1
@@ -252,24 +296,33 @@
             this.lineShape1.Name = "lineShape1";
             this.lineShape1.X1 = 146;
             this.lineShape1.X2 = 307;
-            this.lineShape1.Y1 = 38;
-            this.lineShape1.Y2 = 38;
+            this.lineShape1.Y1 = 173;
+            this.lineShape1.Y2 = 173;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 217);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(900, 338);
+            this.panel1.TabIndex = 15;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 217);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(900, 338);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.TabIndex = 0;
             // 
             // FrmExperienciaLaboral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 555);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelCampos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmExperienciaLaboral";
@@ -279,6 +332,7 @@
             this.panelButtons.ResumeLayout(false);
             this.groupBoxExperienciaLab.ResumeLayout(false);
             this.groupBoxExperienciaLab.PerformLayout();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -299,9 +353,13 @@
         private System.Windows.Forms.TextBox txtPuestoOcupado;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBoxExperienciaLab;
         private System.Windows.Forms.DateTimePicker dateTimeHasta;
         private System.Windows.Forms.DateTimePicker dateTimeDesde;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lbPuestoError;
+        private System.Windows.Forms.Label lbHastaError;
+        private System.Windows.Forms.Label lbDesdeError;
     }
 }

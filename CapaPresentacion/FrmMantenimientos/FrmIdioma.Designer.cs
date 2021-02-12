@@ -36,27 +36,29 @@
             this.rdbtnInactivo = new System.Windows.Forms.RadioButton();
             this.rdbtnActivo = new System.Windows.Forms.RadioButton();
             this.lbNombre = new System.Windows.Forms.Label();
+            this.panelCampos = new System.Windows.Forms.Panel();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.panelCampos = new System.Windows.Forms.Panel();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lbNombreError = new System.Windows.Forms.Label();
+            this.lbPaisError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxEstatus.SuspendLayout();
-            this.panelButtons.SuspendLayout();
             this.panelCampos.SuspendLayout();
+            this.panelButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 217);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 216);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(900, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(900, 339);
             this.dataGridView1.TabIndex = 14;
             // 
             // txtNombreIdioma
@@ -96,9 +98,9 @@
             // 
             this.groupBoxEstatus.Controls.Add(this.rdbtnInactivo);
             this.groupBoxEstatus.Controls.Add(this.rdbtnActivo);
-            this.groupBoxEstatus.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEstatus.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxEstatus.ForeColor = System.Drawing.Color.White;
-            this.groupBoxEstatus.Location = new System.Drawing.Point(20, 68);
+            this.groupBoxEstatus.Location = new System.Drawing.Point(20, 77);
             this.groupBoxEstatus.Name = "groupBoxEstatus";
             this.groupBoxEstatus.Size = new System.Drawing.Size(246, 76);
             this.groupBoxEstatus.TabIndex = 10;
@@ -110,7 +112,7 @@
             this.rdbtnInactivo.AutoSize = true;
             this.rdbtnInactivo.Location = new System.Drawing.Point(129, 33);
             this.rdbtnInactivo.Name = "rdbtnInactivo";
-            this.rdbtnInactivo.Size = new System.Drawing.Size(73, 20);
+            this.rdbtnInactivo.Size = new System.Drawing.Size(80, 24);
             this.rdbtnInactivo.TabIndex = 1;
             this.rdbtnInactivo.TabStop = true;
             this.rdbtnInactivo.Text = "Inactivo";
@@ -121,7 +123,7 @@
             this.rdbtnActivo.AutoSize = true;
             this.rdbtnActivo.Location = new System.Drawing.Point(21, 33);
             this.rdbtnActivo.Name = "rdbtnActivo";
-            this.rdbtnActivo.Size = new System.Drawing.Size(64, 20);
+            this.rdbtnActivo.Size = new System.Drawing.Size(70, 24);
             this.rdbtnActivo.TabIndex = 0;
             this.rdbtnActivo.TabStop = true;
             this.rdbtnActivo.Text = "Activo";
@@ -138,6 +140,25 @@
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre idioma:";
             // 
+            // panelCampos
+            // 
+            this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.lbPaisError);
+            this.panelCampos.Controls.Add(this.lbNombreError);
+            this.panelCampos.Controls.Add(this.panelButtons);
+            this.panelCampos.Controls.Add(this.lbNombre);
+            this.panelCampos.Controls.Add(this.groupBoxEstatus);
+            this.panelCampos.Controls.Add(this.txtPais);
+            this.panelCampos.Controls.Add(this.label4);
+            this.panelCampos.Controls.Add(this.txtNombreIdioma);
+            this.panelCampos.Controls.Add(this.shapeContainer1);
+            this.panelCampos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCampos.ForeColor = System.Drawing.Color.White;
+            this.panelCampos.Location = new System.Drawing.Point(0, 0);
+            this.panelCampos.Name = "panelCampos";
+            this.panelCampos.Size = new System.Drawing.Size(900, 216);
+            this.panelCampos.TabIndex = 13;
+            // 
             // panelButtons
             // 
             this.panelButtons.Controls.Add(this.btnDelete);
@@ -146,8 +167,8 @@
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelButtons.Location = new System.Drawing.Point(642, 0);
             this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(258, 217);
-            this.panelButtons.TabIndex = 12;
+            this.panelButtons.Size = new System.Drawing.Size(258, 216);
+            this.panelButtons.TabIndex = 16;
             // 
             // btnDelete
             // 
@@ -203,23 +224,6 @@
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // panelCampos
-            // 
-            this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.panelCampos.Controls.Add(this.panelButtons);
-            this.panelCampos.Controls.Add(this.lbNombre);
-            this.panelCampos.Controls.Add(this.groupBoxEstatus);
-            this.panelCampos.Controls.Add(this.txtPais);
-            this.panelCampos.Controls.Add(this.label4);
-            this.panelCampos.Controls.Add(this.txtNombreIdioma);
-            this.panelCampos.Controls.Add(this.shapeContainer1);
-            this.panelCampos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCampos.ForeColor = System.Drawing.Color.White;
-            this.panelCampos.Location = new System.Drawing.Point(0, 0);
-            this.panelCampos.Name = "panelCampos";
-            this.panelCampos.Size = new System.Drawing.Size(900, 217);
-            this.panelCampos.TabIndex = 13;
-            // 
             // shapeContainer1
             // 
             this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
@@ -228,7 +232,7 @@
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape4,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(900, 217);
+            this.shapeContainer1.Size = new System.Drawing.Size(900, 216);
             this.shapeContainer1.TabIndex = 13;
             this.shapeContainer1.TabStop = false;
             // 
@@ -252,6 +256,30 @@
             this.lineShape1.Y1 = 38;
             this.lineShape1.Y2 = 38;
             // 
+            // lbNombreError
+            // 
+            this.lbNombreError.AutoSize = true;
+            this.lbNombreError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreError.ForeColor = System.Drawing.Color.Red;
+            this.lbNombreError.Location = new System.Drawing.Point(131, 43);
+            this.lbNombreError.Name = "lbNombreError";
+            this.lbNombreError.Size = new System.Drawing.Size(109, 20);
+            this.lbNombreError.TabIndex = 17;
+            this.lbNombreError.Text = "ErrorMessage";
+            this.lbNombreError.Visible = false;
+            // 
+            // lbPaisError
+            // 
+            this.lbPaisError.AutoSize = true;
+            this.lbPaisError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPaisError.ForeColor = System.Drawing.Color.Red;
+            this.lbPaisError.Location = new System.Drawing.Point(494, 43);
+            this.lbPaisError.Name = "lbPaisError";
+            this.lbPaisError.Size = new System.Drawing.Size(109, 20);
+            this.lbPaisError.TabIndex = 18;
+            this.lbPaisError.Text = "ErrorMessage";
+            this.lbPaisError.Visible = false;
+            // 
             // FrmIdioma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,9 +293,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxEstatus.ResumeLayout(false);
             this.groupBoxEstatus.PerformLayout();
-            this.panelButtons.ResumeLayout(false);
             this.panelCampos.ResumeLayout(false);
             this.panelCampos.PerformLayout();
+            this.panelButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -281,13 +309,15 @@
         private System.Windows.Forms.RadioButton rdbtnInactivo;
         private System.Windows.Forms.RadioButton rdbtnActivo;
         private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.Panel panelButtons;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panelCampos;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Panel panelButtons;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lbPaisError;
+        private System.Windows.Forms.Label lbNombreError;
     }
 }

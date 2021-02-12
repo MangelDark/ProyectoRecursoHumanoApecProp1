@@ -100,6 +100,10 @@ namespace CapaPresentacion
             childForm.Show();
             lblTitleChildForm.Text = childForm.Text;
         }
+
+    
+
+
         private void Reset()
         {
             DisableButton();
@@ -169,6 +173,9 @@ namespace CapaPresentacion
 
         private void btnCapacitacion_Click(object sender, EventArgs e)
         {
+
+            FrmCapacitacion frmCapacitacion = new FrmCapacitacion();
+            OpenChildForm(frmCapacitacion);
             ActivateButton(sender, RGBColors.color1);
         }
         private void btnCompetencia_Click(object sender, EventArgs e)
@@ -227,6 +234,11 @@ namespace CapaPresentacion
                 WindowState = FormWindowState.Normal;
              
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
