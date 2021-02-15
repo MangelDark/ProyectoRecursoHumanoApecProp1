@@ -32,13 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtNivelSalarioMaximo = new System.Windows.Forms.TextBox();
+            this.txtNivelMinimoSalario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdBtnInactivo = new System.Windows.Forms.RadioButton();
+            this.rdBtnActivo = new System.Windows.Forms.RadioButton();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -49,12 +50,12 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgtPuesto = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtPuesto)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNombre
@@ -102,43 +103,43 @@
             this.label4.Text = "Nivel minimo del salario:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(90, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 21);
-            this.textBox1.TabIndex = 5;
+            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.ForeColor = System.Drawing.Color.White;
+            this.txtNombre.Location = new System.Drawing.Point(90, 13);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(216, 21);
+            this.txtNombre.TabIndex = 5;
             // 
-            // textBox3
+            // txtNivelSalarioMaximo
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(499, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 21);
-            this.textBox3.TabIndex = 7;
+            this.txtNivelSalarioMaximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.txtNivelSalarioMaximo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNivelSalarioMaximo.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNivelSalarioMaximo.ForeColor = System.Drawing.Color.White;
+            this.txtNivelSalarioMaximo.Location = new System.Drawing.Point(499, 86);
+            this.txtNivelSalarioMaximo.Name = "txtNivelSalarioMaximo";
+            this.txtNivelSalarioMaximo.Size = new System.Drawing.Size(120, 21);
+            this.txtNivelSalarioMaximo.TabIndex = 7;
             // 
-            // textBox4
+            // txtNivelMinimoSalario
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(498, 15);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 21);
-            this.textBox4.TabIndex = 8;
+            this.txtNivelMinimoSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.txtNivelMinimoSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNivelMinimoSalario.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNivelMinimoSalario.ForeColor = System.Drawing.Color.White;
+            this.txtNivelMinimoSalario.Location = new System.Drawing.Point(498, 15);
+            this.txtNivelMinimoSalario.Name = "txtNivelMinimoSalario";
+            this.txtNivelMinimoSalario.Size = new System.Drawing.Size(120, 21);
+            this.txtNivelMinimoSalario.TabIndex = 8;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rdBtnInactivo);
+            this.groupBox1.Controls.Add(this.rdBtnActivo);
             this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(20, 125);
@@ -148,48 +149,67 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estado puesto:";
             // 
-            // radioButton2
+            // rdBtnInactivo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(129, 33);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Inactivo";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdBtnInactivo.AutoSize = true;
+            this.rdBtnInactivo.Location = new System.Drawing.Point(129, 33);
+            this.rdBtnInactivo.Name = "rdBtnInactivo";
+            this.rdBtnInactivo.Size = new System.Drawing.Size(80, 24);
+            this.rdBtnInactivo.TabIndex = 1;
+            this.rdBtnInactivo.Text = "Inactivo";
+            this.rdBtnInactivo.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdBtnActivo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(21, 33);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Activo";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdBtnActivo.AutoSize = true;
+            this.rdBtnActivo.Checked = true;
+            this.rdBtnActivo.Location = new System.Drawing.Point(21, 33);
+            this.rdBtnActivo.Name = "rdBtnActivo";
+            this.rdBtnActivo.Size = new System.Drawing.Size(70, 24);
+            this.rdBtnActivo.TabIndex = 0;
+            this.rdBtnActivo.TabStop = true;
+            this.rdBtnActivo.Text = "Activo";
+            this.rdBtnActivo.UseVisualStyleBackColor = true;
             // 
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.btnEditar);
             this.panelCampos.Controls.Add(this.panelButtons);
             this.panelCampos.Controls.Add(this.cboxNivelRiesgoPuesto);
             this.panelCampos.Controls.Add(this.label2);
             this.panelCampos.Controls.Add(this.lbNombre);
             this.panelCampos.Controls.Add(this.groupBox1);
             this.panelCampos.Controls.Add(this.label3);
-            this.panelCampos.Controls.Add(this.textBox4);
+            this.panelCampos.Controls.Add(this.txtNivelMinimoSalario);
             this.panelCampos.Controls.Add(this.label4);
-            this.panelCampos.Controls.Add(this.textBox3);
-            this.panelCampos.Controls.Add(this.textBox1);
+            this.panelCampos.Controls.Add(this.txtNivelSalarioMaximo);
+            this.panelCampos.Controls.Add(this.txtNombre);
             this.panelCampos.Controls.Add(this.shapeContainer1);
             this.panelCampos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCampos.ForeColor = System.Drawing.Color.White;
             this.panelCampos.Location = new System.Drawing.Point(0, 0);
             this.panelCampos.Name = "panelCampos";
-            this.panelCampos.Size = new System.Drawing.Size(883, 233);
+            this.panelCampos.Size = new System.Drawing.Size(883, 268);
             this.panelCampos.TabIndex = 12;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(20, 224);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEditar.Size = new System.Drawing.Size(123, 38);
+            this.btnEditar.TabIndex = 14;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelButtons
             // 
@@ -199,7 +219,7 @@
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelButtons.Location = new System.Drawing.Point(625, 0);
             this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(258, 233);
+            this.panelButtons.Size = new System.Drawing.Size(258, 268);
             this.panelButtons.TabIndex = 15;
             // 
             // btnDelete
@@ -216,9 +236,9 @@
             this.btnDelete.Size = new System.Drawing.Size(227, 56);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Eliminar";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -234,9 +254,9 @@
             this.btnClear.Size = new System.Drawing.Size(227, 56);
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "Limpiar Campos";
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -252,9 +272,9 @@
             this.btnSave.Size = new System.Drawing.Size(227, 56);
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Guardar";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cboxNivelRiesgoPuesto
             // 
@@ -262,6 +282,10 @@
             this.cboxNivelRiesgoPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboxNivelRiesgoPuesto.ForeColor = System.Drawing.Color.White;
             this.cboxNivelRiesgoPuesto.FormattingEnabled = true;
+            this.cboxNivelRiesgoPuesto.Items.AddRange(new object[] {
+            "Alta",
+            "Medio",
+            "Bajo"});
             this.cboxNivelRiesgoPuesto.Location = new System.Drawing.Point(180, 84);
             this.cboxNivelRiesgoPuesto.Name = "cboxNivelRiesgoPuesto";
             this.cboxNivelRiesgoPuesto.Size = new System.Drawing.Size(121, 21);
@@ -276,7 +300,7 @@
             this.lineShape2,
             this.lineShape4,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(883, 233);
+            this.shapeContainer1.Size = new System.Drawing.Size(883, 268);
             this.shapeContainer1.TabIndex = 13;
             this.shapeContainer1.TabStop = false;
             // 
@@ -312,21 +336,23 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgtPuesto);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 233);
+            this.panel1.Location = new System.Drawing.Point(0, 268);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 302);
+            this.panel1.Size = new System.Drawing.Size(883, 267);
             this.panel1.TabIndex = 13;
             // 
-            // dataGridView1
+            // dgtPuesto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(883, 302);
-            this.dataGridView1.TabIndex = 0;
+            this.dgtPuesto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgtPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtPuesto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgtPuesto.Location = new System.Drawing.Point(0, 0);
+            this.dgtPuesto.Name = "dgtPuesto";
+            this.dgtPuesto.Size = new System.Drawing.Size(883, 267);
+            this.dgtPuesto.TabIndex = 0;
+            this.dgtPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtPuesto_CellContentClick);
             // 
             // FrmPuesto
             // 
@@ -340,13 +366,14 @@
             this.MinimizeBox = false;
             this.Name = "FrmPuesto";
             this.Text = "Mantenimiento Puesto";
+            this.Load += new System.EventHandler(this.FrmPuesto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panelCampos.ResumeLayout(false);
             this.panelCampos.PerformLayout();
             this.panelButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtPuesto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,12 +384,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtNivelSalarioMaximo;
+        private System.Windows.Forms.TextBox txtNivelMinimoSalario;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdBtnInactivo;
+        private System.Windows.Forms.RadioButton rdBtnActivo;
         private System.Windows.Forms.Panel panelCampos;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
@@ -370,10 +397,11 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgtPuesto;
         private System.Windows.Forms.Panel panelButtons;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

@@ -15,15 +15,15 @@ namespace CapaNegocio.DTO
              
         public DataTable MostrarPuesto()
         {
-            return objeto.Mostrar();
-        }  
-        public void InsertarPuesto(string nombre, string sueldoMaximo, string sueldoMinimo, string nivelRiesgo, string estatus)
-        {
-            objeto.Insertar(nombre,Convert.ToDouble(sueldoMaximo),Convert.ToDouble(sueldoMinimo),Convert.ToChar(nivelRiesgo),Convert.ToInt32(estatus));
+            return objeto.Mostar();
         }
-        public void EditarPuesto(string id,string nombre, string sueldoMaximo, string sueldoMinimo, string nivelRiesgo, string estatus)
+        public void InsertarPuesto(string nombre, string sueldoMaximo, string sueldoMinimo,string nivel, string estatus)
         {
-            objeto.Editar(Convert.ToInt32(id),nombre, Convert.ToDouble(sueldoMaximo), Convert.ToDouble(sueldoMinimo), Convert.ToChar(nivelRiesgo), Convert.ToInt32(estatus));
+            objeto.Insertar(nombre, Convert.ToDouble(sueldoMaximo), Convert.ToDouble(sueldoMinimo),Convert.ToInt32(nivel), Convert.ToInt32(estatus));
+        }
+        public void EditarPuesto(string id, string nombre, string sueldoMaximo, string sueldoMinimo, string nivelRiesgo, string estatus)
+        {
+            objeto.Editar(Convert.ToInt32(id), nombre, Convert.ToDouble(sueldoMaximo), Convert.ToDouble(sueldoMinimo),Convert.ToInt32(nivelRiesgo), Convert.ToInt32(estatus));
         }
         public void ElimiarPuesto(string id)
         {
