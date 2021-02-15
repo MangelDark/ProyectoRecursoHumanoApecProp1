@@ -43,54 +43,87 @@ namespace CapaPresentacion.FrmMantenimientos
             CN_Puesto objeto = new CN_Puesto();
             dgtPuesto.DataSource = objeto.MostrarPuesto();
         }
-
+   
+        //Boton Guardar
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Obtenemos el valor de los radioButton
-            if (rdBtnActivo.Checked)
+            //Validamos que el nombre no este vacio
+            if (txtNombre.Text != "")
             {
-                Estatus = 1;
+                //Validamos que el Salario minimo no este vacio
+                if (txtNivelMinimoSalario.Text != "")
+                {
+                    //Validamos que el Salario maximo no este vacio
+                    if (txtNivelSalarioMaximo.Text != "")
+                    {
+                        //Obtenemos el valor de los radioButton
+                        if (rdBtnActivo.Checked)
+                        {
+                            Estatus = 1;
+                        }
+                        else
+                        {
+                            Estatus = 0;
+                        }
+                        //INSERTAR
+                        if (Editar == false)
+                        {
+                            try
+                            {
+                                objetoCN.InsertarPuesto(txtNombre.Text, txtNivelSalarioMaximo.Text, txtNivelMinimoSalario.Text, cboxNivelRiesgoPuesto.SelectedIndex.ToString(), Convert.ToString(Estatus)); ;
+                                MessageBox.Show("se inserto correctamente");
+                                MostrarPuesto();
+                                limpiarForm();
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                            }
+                        }
+                        ////EDITAR
+                        if (Editar == true)
+                        {
+
+                            try
+                            {
+                                objetoCN.EditarPuesto(idPuesto, txtNombre.Text, txtNivelSalarioMaximo.Text, txtNivelMinimoSalario.Text, cboxNivelRiesgoPuesto.SelectedIndex.ToString(), Convert.ToString(Estatus));
+                                MessageBox.Show("se edito correctamente");
+                                MostrarPuesto();
+                                limpiarForm();
+                                Editar = false;
+                                btnSave.Text = "Guardar";
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("no se pudo editar los datos por: " + ex);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        lbSueldoMaximoError.Text = "El campo es requerido.";
+                        lbSueldoMaximoError.Visible = true;
+                        txtNivelSalarioMaximo.Focus();
+                    }
+                }
+                else
+                {
+                    lbSueldoMinimo.Text = "El campo es requerido.";
+                    lbSueldoMinimo.Visible = true;
+                    txtNivelMinimoSalario.Focus();
+
+                }
             }
             else
             {
-                Estatus = 0;
+                LbErrorNombre.Text = "El campo es requerido.";
+                LbErrorNombre.Visible = true;
+                txtNombre.Focus();
             }
-            //INSERTAR
-            if (Editar == false)
-            {
-                try
-                {
-                    objetoCN.InsertarPuesto(txtNombre.Text, txtNivelSalarioMaximo.Text, txtNivelMinimoSalario.Text, cboxNivelRiesgoPuesto.SelectedIndex.ToString(), Convert.ToString(Estatus)); ;
-                    MessageBox.Show("se inserto correctamente");
-                    MostrarPuesto();
-                    limpiarForm();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo insertar los datos por: " + ex);
-                }
-            }
-            ////EDITAR
-            if (Editar == true)
-            {
-
-                try
-                {
-                    objetoCN.EditarPuesto(idPuesto, txtNombre.Text, txtNivelSalarioMaximo.Text, txtNivelMinimoSalario.Text, cboxNivelRiesgoPuesto.SelectedIndex.ToString(), Convert.ToString(Estatus));
-                    MessageBox.Show("se edito correctamente");
-                    MostrarPuesto();
-                    limpiarForm();
-                    Editar = false;
-                    btnSave.Text = "Guardar";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo editar los datos por: " + ex);
-                }
-            }
+          
         }
 
-
+        //Es un funcion que limpia los campos es reutilizables
         private void limpiarForm()
         {
 
@@ -102,7 +135,7 @@ namespace CapaPresentacion.FrmMantenimientos
             btnSave.Text = "Guardar";
             Editar = false;
         }
-
+        //El boton editar llenas los campos con la fila selecionado de datagridview
         private void button1_Click(object sender, EventArgs e)
         {
             if (dgtPuesto.SelectedRows.Count > 0)
@@ -129,7 +162,7 @@ namespace CapaPresentacion.FrmMantenimientos
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
-
+        //Elimina un registro de puesto
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgtPuesto.SelectedRows.Count > 0)
@@ -142,11 +175,86 @@ namespace CapaPresentacion.FrmMantenimientos
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
-
+        //Limpiar los campos 
         private void btnClear_Click(object sender, EventArgs e)
         {
             limpiarForm();
            
+        }
+        private void LbErrorNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Esta funcion verifica cuando sales el campos si tiene datos si es asi el LbErro se podra invisible
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text !="" )
+            {
+                LbErrorNombre.Visible = false;
+                LbErrorNombre.Text = "";
+            }
+        }
+        //Esta funcion verifica cuando sales el campos si tiene datos si es asi el LbErro se podra invisible
+        private void txtNivelMinimoSalario_Leave(object sender, EventArgs e)
+        {
+            if (txtNivelMinimoSalario.Text != "")
+            {
+                lbSueldoMinimo.Visible = false;
+                lbSueldoMinimo.Text = "";
+            }
+        }
+        //Esta funcion verifica cuando sales el campos si tiene datos si es asi el LbErro se podra invisible
+        private void txtNivelSalarioMaximo_Leave(object sender, EventArgs e)
+        {
+            if (txtNivelSalarioMaximo.Text != "")
+            {
+                lbSueldoMaximoError.Visible = false;
+                lbSueldoMaximoError.Text = "";
+            }
+        }
+        //Esta funcion hace que el campo de minimo salario no se ingrese letrar 
+        private void txtNivelMinimoSalario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+           (e.KeyChar != '.') && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                lbSueldoMinimo.Text = "Solo numeros.";
+                lbSueldoMinimo.Visible = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
+
+        }
+        //Esta funcion hace que el campo de maximo salario no se ingrese letrar 
+        private void txtNivelSalarioMaximo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+             (e.KeyChar != '.') && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                lbSueldoMaximoError.Text = "Solo numeros";
+                lbSueldoMaximoError.Visible = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

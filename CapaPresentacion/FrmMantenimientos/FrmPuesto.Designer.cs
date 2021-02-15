@@ -51,6 +51,9 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgtPuesto = new System.Windows.Forms.DataGridView();
+            this.LbErrorNombre = new System.Windows.Forms.Label();
+            this.lbSueldoMinimo = new System.Windows.Forms.Label();
+            this.lbSueldoMaximoError = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
@@ -113,6 +116,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(216, 21);
             this.txtNombre.TabIndex = 5;
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtNivelSalarioMaximo
             // 
@@ -124,6 +128,8 @@
             this.txtNivelSalarioMaximo.Name = "txtNivelSalarioMaximo";
             this.txtNivelSalarioMaximo.Size = new System.Drawing.Size(120, 21);
             this.txtNivelSalarioMaximo.TabIndex = 7;
+            this.txtNivelSalarioMaximo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNivelSalarioMaximo_KeyPress);
+            this.txtNivelSalarioMaximo.Leave += new System.EventHandler(this.txtNivelSalarioMaximo_Leave);
             // 
             // txtNivelMinimoSalario
             // 
@@ -135,6 +141,8 @@
             this.txtNivelMinimoSalario.Name = "txtNivelMinimoSalario";
             this.txtNivelMinimoSalario.Size = new System.Drawing.Size(120, 21);
             this.txtNivelMinimoSalario.TabIndex = 8;
+            this.txtNivelMinimoSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNivelMinimoSalario_KeyPress);
+            this.txtNivelMinimoSalario.Leave += new System.EventHandler(this.txtNivelMinimoSalario_Leave);
             // 
             // groupBox1
             // 
@@ -174,6 +182,9 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.lbSueldoMaximoError);
+            this.panelCampos.Controls.Add(this.lbSueldoMinimo);
+            this.panelCampos.Controls.Add(this.LbErrorNombre);
             this.panelCampos.Controls.Add(this.btnEditar);
             this.panelCampos.Controls.Add(this.panelButtons);
             this.panelCampos.Controls.Add(this.cboxNivelRiesgoPuesto);
@@ -354,6 +365,43 @@
             this.dgtPuesto.TabIndex = 0;
             this.dgtPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtPuesto_CellContentClick);
             // 
+            // LbErrorNombre
+            // 
+            this.LbErrorNombre.AutoSize = true;
+            this.LbErrorNombre.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.LbErrorNombre.Location = new System.Drawing.Point(87, 40);
+            this.LbErrorNombre.Name = "LbErrorNombre";
+            this.LbErrorNombre.Size = new System.Drawing.Size(69, 17);
+            this.LbErrorNombre.TabIndex = 16;
+            this.LbErrorNombre.Text = "LbNombre";
+            this.LbErrorNombre.Visible = false;
+            this.LbErrorNombre.Click += new System.EventHandler(this.LbErrorNombre_Click);
+            // 
+            // lbSueldoMinimo
+            // 
+            this.lbSueldoMinimo.AutoSize = true;
+            this.lbSueldoMinimo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMinimo.ForeColor = System.Drawing.Color.Red;
+            this.lbSueldoMinimo.Location = new System.Drawing.Point(496, 41);
+            this.lbSueldoMinimo.Name = "lbSueldoMinimo";
+            this.lbSueldoMinimo.Size = new System.Drawing.Size(105, 17);
+            this.lbSueldoMinimo.TabIndex = 17;
+            this.lbSueldoMinimo.Text = "LbSalarioMinimo";
+            this.lbSueldoMinimo.Visible = false;
+            // 
+            // lbSueldoMaximoError
+            // 
+            this.lbSueldoMaximoError.AutoSize = true;
+            this.lbSueldoMaximoError.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMaximoError.ForeColor = System.Drawing.Color.Red;
+            this.lbSueldoMaximoError.Location = new System.Drawing.Point(496, 114);
+            this.lbSueldoMaximoError.Name = "lbSueldoMaximoError";
+            this.lbSueldoMaximoError.Size = new System.Drawing.Size(109, 17);
+            this.lbSueldoMaximoError.TabIndex = 18;
+            this.lbSueldoMaximoError.Text = "LbSalarioMaximo";
+            this.lbSueldoMaximoError.Visible = false;
+            // 
             // FrmPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,5 +451,8 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label lbSueldoMaximoError;
+        private System.Windows.Forms.Label lbSueldoMinimo;
+        private System.Windows.Forms.Label LbErrorNombre;
     }
 }
