@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio.DTO;
+using System.Windows.Forms;
 
 namespace CapaPresentacion.FrmMantenimientos
 {
@@ -41,7 +42,8 @@ namespace CapaPresentacion.FrmMantenimientos
         private void MostrarPuesto()
         {
             CN_Puesto objeto = new CN_Puesto();
-            dgtPuesto.DataSource = objeto.MostrarPuesto();
+           
+            cargarCheck(dgtPuesto,objeto.MostrarPuesto());
         }
    
         //Boton Guardar
@@ -254,6 +256,40 @@ namespace CapaPresentacion.FrmMantenimientos
             if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
             {
                 e.Handled = true;
+            }
+        }
+        //Cargarmos los datos al grid con un check
+        public void cargarCheck(DataGridView grid,DataTable data)
+        {
+            grid.Columns.Clear();
+            DataGridViewCheckBoxColumn check = new DataGridViewCheckBoxColumn();
+            check.HeaderText = "Eliminar";
+            check.Name = "Elimnar";
+            check.Width = 60;
+            grid.Columns.Add(check);
+            grid.Columns[grid.Columns.Count - 1].DisplayIndex = 0;
+            grid.DataSource = data;
+        }
+
+        private void btnSelectAll_Click(object sender, EventArgs e)
+        {
+            for (int i = 0;i<= dgtPuesto.Rows.Count - 1; i++)
+            {
+                if (Convert.ToBoolean(dgtPuesto.Rows[i].Cells[0].Value))
+                {
+                    dgtPuesto.Rows[i].Cells[0].Value = true;
+                }
+            }
+        }
+
+        private void btnQuitarAll_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= dgtPuesto.Rows.Count - 1; i++)
+            {
+                if (Convert.ToBoolean(dgtPuesto.Rows[i].Cells[0].Value))
+                {
+                    dgtPuesto.Rows[i].Cells[0].Value = false;
+                }
             }
         }
     }

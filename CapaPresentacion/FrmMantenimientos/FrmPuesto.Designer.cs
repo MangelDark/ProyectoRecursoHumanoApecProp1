@@ -54,6 +54,8 @@
             this.LbErrorNombre = new System.Windows.Forms.Label();
             this.lbSueldoMinimo = new System.Windows.Forms.Label();
             this.lbSueldoMaximoError = new System.Windows.Forms.Label();
+            this.btnSelectAll = new System.Windows.Forms.Button();
+            this.btnQuitarAll = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
@@ -182,6 +184,8 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.btnQuitarAll);
+            this.panelCampos.Controls.Add(this.btnSelectAll);
             this.panelCampos.Controls.Add(this.lbSueldoMaximoError);
             this.panelCampos.Controls.Add(this.lbSueldoMinimo);
             this.panelCampos.Controls.Add(this.LbErrorNombre);
@@ -212,7 +216,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(20, 224);
+            this.btnEditar.Location = new System.Drawing.Point(9, 224);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnEditar.Size = new System.Drawing.Size(123, 38);
@@ -402,6 +406,42 @@
             this.lbSueldoMaximoError.Text = "LbSalarioMaximo";
             this.lbSueldoMaximoError.Visible = false;
             // 
+            // btnSelectAll
+            // 
+            this.btnSelectAll.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnSelectAll.FlatAppearance.BorderSize = 0;
+            this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectAll.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectAll.ForeColor = System.Drawing.Color.White;
+            this.btnSelectAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSelectAll.Location = new System.Drawing.Point(138, 224);
+            this.btnSelectAll.Name = "btnSelectAll";
+            this.btnSelectAll.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnSelectAll.Size = new System.Drawing.Size(185, 38);
+            this.btnSelectAll.TabIndex = 19;
+            this.btnSelectAll.Text = "Seleccionar todos";
+            this.btnSelectAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSelectAll.UseVisualStyleBackColor = false;
+            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
+            // 
+            // btnQuitarAll
+            // 
+            this.btnQuitarAll.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnQuitarAll.FlatAppearance.BorderSize = 0;
+            this.btnQuitarAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitarAll.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitarAll.ForeColor = System.Drawing.Color.White;
+            this.btnQuitarAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuitarAll.Location = new System.Drawing.Point(329, 224);
+            this.btnQuitarAll.Name = "btnQuitarAll";
+            this.btnQuitarAll.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnQuitarAll.Size = new System.Drawing.Size(176, 38);
+            this.btnQuitarAll.TabIndex = 20;
+            this.btnQuitarAll.Text = "Quitar seleccion";
+            this.btnQuitarAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuitarAll.UseVisualStyleBackColor = false;
+            this.btnQuitarAll.Click += new System.EventHandler(this.btnQuitarAll_Click);
+            // 
             // FrmPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,5 +494,7 @@
         private System.Windows.Forms.Label lbSueldoMaximoError;
         private System.Windows.Forms.Label lbSueldoMinimo;
         private System.Windows.Forms.Label LbErrorNombre;
+        private System.Windows.Forms.Button btnQuitarAll;
+        private System.Windows.Forms.Button btnSelectAll;
     }
 }
