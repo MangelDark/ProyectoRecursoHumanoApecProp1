@@ -16,6 +16,10 @@ namespace CapaNegocio.DTOUser
             return userDao.Login(user,pass);
         }
 
+        public string recoverPassword(string userRequesting)
+        {
+            return userDao.recoverPassowrd(userRequesting);
+        }
         public void AnyMethod()
         {
             //Security and Permision 

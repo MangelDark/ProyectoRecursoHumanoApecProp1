@@ -62,6 +62,12 @@
     <Compile Include="FrmLogin\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin\FrmRecoverPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin\FrmRecoverPassword.Designer.cs">
+      <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMantenimientos\FrmCandidato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin\FrmRecoverPassword.resx">
+      <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientos\FrmCandidato.resx">
       <DependentUpon>FrmCandidato.cs</DependentUpon>

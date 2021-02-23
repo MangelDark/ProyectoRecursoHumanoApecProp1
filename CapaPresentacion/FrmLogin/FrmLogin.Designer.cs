@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLoginUI));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.linkpass = new System.Windows.Forms.LinkLabel();
             this.lbError = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -72,6 +72,18 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(25, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Proyecto exoneración\r\n";
             // 
             // label2
             // 
@@ -206,6 +218,7 @@
             this.linkpass.TabIndex = 11;
             this.linkpass.TabStop = true;
             this.linkpass.Text = "¿Ha olvidado contraseña?";
+            this.linkpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkpass_LinkClicked);
             // 
             // lbError
             // 
@@ -218,18 +231,6 @@
             this.lbError.TabIndex = 12;
             this.lbError.Text = "ErrorMessage";
             this.lbError.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Industry-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(25, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 25);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Proyecto exoneración\r\n";
             // 
             // FrmLoginUI
             // 

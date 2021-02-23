@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="CD_ContentConnection.cs" />
     <Compile Include="ConnectionToSql.cs" />
+    <Compile Include="MailServices\MasterMailServices.cs" />
+    <Compile Include="MailServices\SystemSupportMail.cs" />
     <Compile Include="Modelos\CD_Candidato.cs" />
     <Compile Include="Modelos\CD_Capacitacion.cs" />
     <Compile Include="Modelos\CD_Competencia.cs" />

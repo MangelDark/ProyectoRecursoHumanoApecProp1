@@ -47,6 +47,51 @@ namespace CapaDato.TBUsers
                 }
             }
         }
+
+
+        public string recoverPassowrd(string userRequesting) 
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "Select *from Users where LoginName=@user or Email=@mail";
+                    command.CommandType = CommandType.Text;
+                    command.Parameters.AddWithValue("@user",userRequesting);
+                    command.Parameters.AddWithValue("@mail", userRequesting);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read() == true)
+                    {
+                        string userName = reader.GetString(3) + ", " + reader.GetString(4);
+                        string userMail = reader.GetString(6);
+                        string accountPassword = reader.GetString(2);
+
+                        var mainService = new MailServices.SystemSupportMail();
+                        mainService.sendMail(
+                             subject:"SYSTEM: password recovery request",
+                             body:"Hi "+userName+" \nYou Requested to recover your password.\n"+
+                             "your current password is: "+ accountPassword +
+                             "\nHowever, we ask that you change password inmediately once you enter the system.",
+                             recipientMail:  new List<string> { userMail}
+                            );
+
+                        return "Hi, " + userName + "\nYou Requested to recover your password.\n" +
+                         "Please check your mail: " + userMail +
+                         "\nHowever, we ask that you change your password inmediately once you enter the systam";
+
+                    }
+                    else
+                    {
+                        return "Sorry, you do not have an account with tha mail or userName";
+                    }
+                }
+
+            }
+        
+        }
+
         public void AnyMethod()
         {
             if (UserCache.Position == Positions.Administrator)

@@ -134,5 +134,11 @@ namespace CapaPresentacion.FrmLogin
             lbError.Visible = false;
             this.Show();
         }
+
+        private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var frmRecover = new FrmRecoverPassword();
+            frmRecover.ShowDialog();
+        }
     }
 }
