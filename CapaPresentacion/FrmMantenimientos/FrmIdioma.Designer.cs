@@ -37,6 +37,9 @@
             this.rdbtnActivo = new System.Windows.Forms.RadioButton();
             this.lbNombre = new System.Windows.Forms.Label();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.lbPaisError = new System.Windows.Forms.Label();
+            this.lbNombreError = new System.Windows.Forms.Label();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -44,8 +47,6 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lbNombreError = new System.Windows.Forms.Label();
-            this.lbPaisError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxEstatus.SuspendLayout();
             this.panelCampos.SuspendLayout();
@@ -71,6 +72,7 @@
             this.txtNombreIdioma.Name = "txtNombreIdioma";
             this.txtNombreIdioma.Size = new System.Drawing.Size(216, 21);
             this.txtNombreIdioma.TabIndex = 5;
+            this.txtNombreIdioma.Leave += new System.EventHandler(this.txtNombreIdioma_Leave);
             // 
             // label4
             // 
@@ -93,6 +95,7 @@
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(120, 21);
             this.txtPais.TabIndex = 8;
+            this.txtPais.Leave += new System.EventHandler(this.txtPais_Leave);
             // 
             // groupBoxEstatus
             // 
@@ -114,13 +117,13 @@
             this.rdbtnInactivo.Name = "rdbtnInactivo";
             this.rdbtnInactivo.Size = new System.Drawing.Size(80, 24);
             this.rdbtnInactivo.TabIndex = 1;
-            this.rdbtnInactivo.TabStop = true;
             this.rdbtnInactivo.Text = "Inactivo";
             this.rdbtnInactivo.UseVisualStyleBackColor = true;
             // 
             // rdbtnActivo
             // 
             this.rdbtnActivo.AutoSize = true;
+            this.rdbtnActivo.Checked = true;
             this.rdbtnActivo.Location = new System.Drawing.Point(21, 33);
             this.rdbtnActivo.Name = "rdbtnActivo";
             this.rdbtnActivo.Size = new System.Drawing.Size(70, 24);
@@ -143,6 +146,7 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.btnEditar);
             this.panelCampos.Controls.Add(this.lbPaisError);
             this.panelCampos.Controls.Add(this.lbNombreError);
             this.panelCampos.Controls.Add(this.panelButtons);
@@ -158,6 +162,48 @@
             this.panelCampos.Name = "panelCampos";
             this.panelCampos.Size = new System.Drawing.Size(900, 216);
             this.panelCampos.TabIndex = 13;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(20, 172);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEditar.Size = new System.Drawing.Size(123, 38);
+            this.btnEditar.TabIndex = 19;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // lbPaisError
+            // 
+            this.lbPaisError.AutoSize = true;
+            this.lbPaisError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPaisError.ForeColor = System.Drawing.Color.Red;
+            this.lbPaisError.Location = new System.Drawing.Point(486, 43);
+            this.lbPaisError.Name = "lbPaisError";
+            this.lbPaisError.Size = new System.Drawing.Size(109, 20);
+            this.lbPaisError.TabIndex = 18;
+            this.lbPaisError.Text = "ErrorMessage";
+            this.lbPaisError.Visible = false;
+            // 
+            // lbNombreError
+            // 
+            this.lbNombreError.AutoSize = true;
+            this.lbNombreError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreError.ForeColor = System.Drawing.Color.Red;
+            this.lbNombreError.Location = new System.Drawing.Point(131, 43);
+            this.lbNombreError.Name = "lbNombreError";
+            this.lbNombreError.Size = new System.Drawing.Size(109, 20);
+            this.lbNombreError.TabIndex = 17;
+            this.lbNombreError.Text = "ErrorMessage";
+            this.lbNombreError.Visible = false;
             // 
             // panelButtons
             // 
@@ -187,6 +233,7 @@
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -205,6 +252,7 @@
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -223,6 +271,7 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // shapeContainer1
             // 
@@ -256,30 +305,6 @@
             this.lineShape1.Y1 = 38;
             this.lineShape1.Y2 = 38;
             // 
-            // lbNombreError
-            // 
-            this.lbNombreError.AutoSize = true;
-            this.lbNombreError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombreError.ForeColor = System.Drawing.Color.Red;
-            this.lbNombreError.Location = new System.Drawing.Point(131, 43);
-            this.lbNombreError.Name = "lbNombreError";
-            this.lbNombreError.Size = new System.Drawing.Size(109, 20);
-            this.lbNombreError.TabIndex = 17;
-            this.lbNombreError.Text = "ErrorMessage";
-            this.lbNombreError.Visible = false;
-            // 
-            // lbPaisError
-            // 
-            this.lbPaisError.AutoSize = true;
-            this.lbPaisError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPaisError.ForeColor = System.Drawing.Color.Red;
-            this.lbPaisError.Location = new System.Drawing.Point(494, 43);
-            this.lbPaisError.Name = "lbPaisError";
-            this.lbPaisError.Size = new System.Drawing.Size(109, 20);
-            this.lbPaisError.TabIndex = 18;
-            this.lbPaisError.Text = "ErrorMessage";
-            this.lbPaisError.Visible = false;
-            // 
             // FrmIdioma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +315,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmIdioma";
             this.Text = "Mantenimiento Idiomas";
+            this.Load += new System.EventHandler(this.FrmIdioma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxEstatus.ResumeLayout(false);
             this.groupBoxEstatus.PerformLayout();
@@ -319,5 +345,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lbPaisError;
         private System.Windows.Forms.Label lbNombreError;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

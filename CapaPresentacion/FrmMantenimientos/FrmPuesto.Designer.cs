@@ -39,6 +39,9 @@
             this.rdBtnInactivo = new System.Windows.Forms.RadioButton();
             this.rdBtnActivo = new System.Windows.Forms.RadioButton();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.lbSueldoMaximoError = new System.Windows.Forms.Label();
+            this.lbSueldoMinimo = new System.Windows.Forms.Label();
+            this.LbErrorNombre = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -51,11 +54,6 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgtPuesto = new System.Windows.Forms.DataGridView();
-            this.LbErrorNombre = new System.Windows.Forms.Label();
-            this.lbSueldoMinimo = new System.Windows.Forms.Label();
-            this.lbSueldoMaximoError = new System.Windows.Forms.Label();
-            this.btnSelectAll = new System.Windows.Forms.Button();
-            this.btnQuitarAll = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
@@ -184,8 +182,6 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.panelCampos.Controls.Add(this.btnQuitarAll);
-            this.panelCampos.Controls.Add(this.btnSelectAll);
             this.panelCampos.Controls.Add(this.lbSueldoMaximoError);
             this.panelCampos.Controls.Add(this.lbSueldoMinimo);
             this.panelCampos.Controls.Add(this.LbErrorNombre);
@@ -207,6 +203,43 @@
             this.panelCampos.Name = "panelCampos";
             this.panelCampos.Size = new System.Drawing.Size(883, 268);
             this.panelCampos.TabIndex = 12;
+            // 
+            // lbSueldoMaximoError
+            // 
+            this.lbSueldoMaximoError.AutoSize = true;
+            this.lbSueldoMaximoError.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMaximoError.ForeColor = System.Drawing.Color.Red;
+            this.lbSueldoMaximoError.Location = new System.Drawing.Point(496, 114);
+            this.lbSueldoMaximoError.Name = "lbSueldoMaximoError";
+            this.lbSueldoMaximoError.Size = new System.Drawing.Size(109, 17);
+            this.lbSueldoMaximoError.TabIndex = 18;
+            this.lbSueldoMaximoError.Text = "LbSalarioMaximo";
+            this.lbSueldoMaximoError.Visible = false;
+            // 
+            // lbSueldoMinimo
+            // 
+            this.lbSueldoMinimo.AutoSize = true;
+            this.lbSueldoMinimo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMinimo.ForeColor = System.Drawing.Color.Red;
+            this.lbSueldoMinimo.Location = new System.Drawing.Point(496, 41);
+            this.lbSueldoMinimo.Name = "lbSueldoMinimo";
+            this.lbSueldoMinimo.Size = new System.Drawing.Size(105, 17);
+            this.lbSueldoMinimo.TabIndex = 17;
+            this.lbSueldoMinimo.Text = "LbSalarioMinimo";
+            this.lbSueldoMinimo.Visible = false;
+            // 
+            // LbErrorNombre
+            // 
+            this.LbErrorNombre.AutoSize = true;
+            this.LbErrorNombre.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.LbErrorNombre.Location = new System.Drawing.Point(87, 40);
+            this.LbErrorNombre.Name = "LbErrorNombre";
+            this.LbErrorNombre.Size = new System.Drawing.Size(69, 17);
+            this.LbErrorNombre.TabIndex = 16;
+            this.LbErrorNombre.Text = "LbNombre";
+            this.LbErrorNombre.Visible = false;
+            this.LbErrorNombre.Click += new System.EventHandler(this.LbErrorNombre_Click);
             // 
             // btnEditar
             // 
@@ -369,79 +402,6 @@
             this.dgtPuesto.TabIndex = 0;
             this.dgtPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtPuesto_CellContentClick);
             // 
-            // LbErrorNombre
-            // 
-            this.LbErrorNombre.AutoSize = true;
-            this.LbErrorNombre.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbErrorNombre.ForeColor = System.Drawing.Color.Red;
-            this.LbErrorNombre.Location = new System.Drawing.Point(87, 40);
-            this.LbErrorNombre.Name = "LbErrorNombre";
-            this.LbErrorNombre.Size = new System.Drawing.Size(69, 17);
-            this.LbErrorNombre.TabIndex = 16;
-            this.LbErrorNombre.Text = "LbNombre";
-            this.LbErrorNombre.Visible = false;
-            this.LbErrorNombre.Click += new System.EventHandler(this.LbErrorNombre_Click);
-            // 
-            // lbSueldoMinimo
-            // 
-            this.lbSueldoMinimo.AutoSize = true;
-            this.lbSueldoMinimo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSueldoMinimo.ForeColor = System.Drawing.Color.Red;
-            this.lbSueldoMinimo.Location = new System.Drawing.Point(496, 41);
-            this.lbSueldoMinimo.Name = "lbSueldoMinimo";
-            this.lbSueldoMinimo.Size = new System.Drawing.Size(105, 17);
-            this.lbSueldoMinimo.TabIndex = 17;
-            this.lbSueldoMinimo.Text = "LbSalarioMinimo";
-            this.lbSueldoMinimo.Visible = false;
-            // 
-            // lbSueldoMaximoError
-            // 
-            this.lbSueldoMaximoError.AutoSize = true;
-            this.lbSueldoMaximoError.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSueldoMaximoError.ForeColor = System.Drawing.Color.Red;
-            this.lbSueldoMaximoError.Location = new System.Drawing.Point(496, 114);
-            this.lbSueldoMaximoError.Name = "lbSueldoMaximoError";
-            this.lbSueldoMaximoError.Size = new System.Drawing.Size(109, 17);
-            this.lbSueldoMaximoError.TabIndex = 18;
-            this.lbSueldoMaximoError.Text = "LbSalarioMaximo";
-            this.lbSueldoMaximoError.Visible = false;
-            // 
-            // btnSelectAll
-            // 
-            this.btnSelectAll.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnSelectAll.FlatAppearance.BorderSize = 0;
-            this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectAll.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectAll.ForeColor = System.Drawing.Color.White;
-            this.btnSelectAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSelectAll.Location = new System.Drawing.Point(138, 224);
-            this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSelectAll.Size = new System.Drawing.Size(185, 38);
-            this.btnSelectAll.TabIndex = 19;
-            this.btnSelectAll.Text = "Seleccionar todos";
-            this.btnSelectAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSelectAll.UseVisualStyleBackColor = false;
-            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
-            // 
-            // btnQuitarAll
-            // 
-            this.btnQuitarAll.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnQuitarAll.FlatAppearance.BorderSize = 0;
-            this.btnQuitarAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuitarAll.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuitarAll.ForeColor = System.Drawing.Color.White;
-            this.btnQuitarAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuitarAll.Location = new System.Drawing.Point(329, 224);
-            this.btnQuitarAll.Name = "btnQuitarAll";
-            this.btnQuitarAll.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnQuitarAll.Size = new System.Drawing.Size(176, 38);
-            this.btnQuitarAll.TabIndex = 20;
-            this.btnQuitarAll.Text = "Quitar seleccion";
-            this.btnQuitarAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnQuitarAll.UseVisualStyleBackColor = false;
-            this.btnQuitarAll.Click += new System.EventHandler(this.btnQuitarAll_Click);
-            // 
             // FrmPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,7 +445,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgtPuesto;
         private System.Windows.Forms.Panel panelButtons;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClear;
@@ -494,7 +453,6 @@
         private System.Windows.Forms.Label lbSueldoMaximoError;
         private System.Windows.Forms.Label lbSueldoMinimo;
         private System.Windows.Forms.Label LbErrorNombre;
-        private System.Windows.Forms.Button btnQuitarAll;
-        private System.Windows.Forms.Button btnSelectAll;
+        public System.Windows.Forms.DataGridView dgtPuesto;
     }
 }

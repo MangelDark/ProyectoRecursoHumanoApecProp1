@@ -18,6 +18,7 @@ namespace CapaPresentacion.FrmMantenimientos
         private string idPuesto = null;
         private bool Editar = false;
         int Estatus;
+ 
         public FrmPuesto()
         {
             InitializeComponent();
@@ -42,8 +43,9 @@ namespace CapaPresentacion.FrmMantenimientos
         private void MostrarPuesto()
         {
             CN_Puesto objeto = new CN_Puesto();
-           
-            cargarCheck(dgtPuesto,objeto.MostrarPuesto());
+
+            dgtPuesto.DataSource = objeto.MostrarPuesto();
+            //cargarCheck(dgtPuesto,objeto.MostrarPuesto());
         }
    
         //Boton Guardar
@@ -263,8 +265,9 @@ namespace CapaPresentacion.FrmMantenimientos
         {
             grid.Columns.Clear();
             DataGridViewCheckBoxColumn check = new DataGridViewCheckBoxColumn();
-            check.HeaderText = "Eliminar";
-            check.Name = "Elimnar";
+
+            check.HeaderText = "Seleccionar";
+            check.Name = "Seleccionar";
             check.Width = 60;
             grid.Columns.Add(check);
             grid.Columns[grid.Columns.Count - 1].DisplayIndex = 0;

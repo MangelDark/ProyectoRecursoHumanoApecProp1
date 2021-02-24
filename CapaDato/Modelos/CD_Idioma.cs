@@ -8,60 +8,95 @@ using System.Threading.Tasks;
 
 namespace CapaDato.Modelos
 {
-    public class CD_Idioma
+    public class CD_Idioma : ConnectionToSql
     {
-        private CD_ContentConnection Con = new CD_ContentConnection();
+        //private CD_ContentConnection Con = new CD_ContentConnection();
 
         SqlDataReader leer;
         DataTable table = new DataTable();
-        SqlCommand comando = new SqlCommand();
+        //SqlCommand comando = new SqlCommand();
 
         public DataTable Mostrar()
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "MostrarIdioma";
-            comando.CommandType = CommandType.StoredProcedure;
-            leer = comando.ExecuteReader();
-            table.Load(leer);
-            Con.CerrarConexion();
-            return table;
+            using (var conn = GetConnection() )
+            {
+                conn.Open();
+                using (var comando =  new SqlCommand())
+                {
+                    comando.Connection = conn;
+                    comando.CommandText = "MostrarIdioma";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    leer = comando.ExecuteReader();
+                    table.Load(leer);
+                    return table;
+                }
+
+            }
+                
         }
 
-        public void Insertar(string nombre, int estatus)
+        public void Insertar(string nombre, string pais,int estatus)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "InsertarIdioma";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@estatus", estatus);
+            using (var conn  = GetConnection())
+            {
+                conn.Open();
+                using (var comando = new SqlCommand())
+                {
+                    comando.Connection = conn;
+                    comando.CommandText = "InsertarIdioma";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@nombre", nombre);
+                    comando.Parameters.AddWithValue("@pais", pais);
+                    comando.Parameters.AddWithValue("@estado", estatus);
 
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            }
+                
 
 
         }
-        public void Editar(int id, string nombre, int estatus)
+        public void Editar(int id, string nombre,string pais, int estatus)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EditarIdioma";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id", id);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@estatus", estatus);
+            using (var conn =  GetConnection())
+            { conn.Open();
+                using (var comando =  new SqlCommand())
+                {
+                    comando.Connection = conn;
+                    comando.CommandText = "EditarIdioma";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@id", id);
+                    comando.Parameters.AddWithValue("@nombre", nombre);
+                    comando.Parameters.AddWithValue("@pais", pais);
+                    comando.Parameters.AddWithValue("@estado", estatus);
 
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            }
+   
 
         }
 
         public void Eliminar(int id)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EliminarIdioma";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id", id);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+            using (var conn =  GetConnection()) 
+            {
+                conn.Open();
+                using (var comando = new  SqlCommand())
+                {
+                    comando.Connection = conn;
+                    comando.CommandText = "EliminarIdioma";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@id", id);
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            
+            }
+
+         
         }
     }
 }

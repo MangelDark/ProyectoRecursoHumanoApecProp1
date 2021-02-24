@@ -17,13 +17,13 @@ namespace CapaNegocio.DTO
         {
             return objeto.Mostrar();
         }
-        public  void InsertarIdioma(string nombre, string estatus)
+        public  void InsertarIdioma(string nombre,string pais, string estatus)
         {
-            objeto.Insertar(nombre,Convert.ToInt32(estatus));
+            objeto.Insertar(nombre,pais,Convert.ToInt32(estatus));
         }
-        public void EditarIdioma(string id,string nombre, string estatus)
+        public void EditarIdioma(string id,string nombre,string pais, string estatus)
         {
-            objeto.Editar(Convert.ToInt32(id),nombre, Convert.ToInt32(estatus));
+            objeto.Editar(Convert.ToInt32(id),nombre, pais, Convert.ToInt32(estatus));
         }
         public void ElimarIdioma(string id)
         {
