@@ -90,6 +90,7 @@
             this.panelBarra.Name = "panelBarra";
             this.panelBarra.Size = new System.Drawing.Size(1100, 32);
             this.panelBarra.TabIndex = 0;
+            this.panelBarra.Click += new System.EventHandler(this.panelBarra_Click);
             this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarra_MouseDown);
             // 
             // panel2
@@ -151,6 +152,7 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(207, 627);
             this.panelMenu.TabIndex = 1;
+            this.panelMenu.Click += new System.EventHandler(this.panelMenu_Click);
             // 
             // button1
             // 
@@ -259,6 +261,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 74);
             this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label5
             // 
@@ -416,6 +419,7 @@
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Size = new System.Drawing.Size(893, 555);
             this.panelPrincipal.TabIndex = 1;
+            this.panelPrincipal.Click += new System.EventHandler(this.panelPrincipal_Click);
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
             // panelTitulo
@@ -430,6 +434,7 @@
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(893, 72);
             this.panelTitulo.TabIndex = 8;
+            this.panelTitulo.Click += new System.EventHandler(this.panelTitulo_Click);
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 
             // panelUserInformacion
@@ -444,6 +449,7 @@
             this.panelUserInformacion.Name = "panelUserInformacion";
             this.panelUserInformacion.Size = new System.Drawing.Size(235, 72);
             this.panelUserInformacion.TabIndex = 4;
+            this.panelUserInformacion.Click += new System.EventHandler(this.panelUserInformacion_Click);
             // 
             // pictureBox4
             // 
@@ -533,6 +539,7 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // MenuPrincipal
             // 

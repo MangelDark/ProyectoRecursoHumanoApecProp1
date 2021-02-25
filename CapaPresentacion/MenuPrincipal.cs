@@ -226,8 +226,16 @@ namespace CapaPresentacion
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
-            Reset();
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+                Reset();
+            }
+            else
+            {
+                Reset();
+            }
+          
         }
 
         private void panelTitulo_MouseDown(object sender, MouseEventArgs e)
@@ -271,6 +279,8 @@ namespace CapaPresentacion
                 SubMenuConfig.Visible = true;
                 SubMenuConfig.BringToFront();
                 panelSubMenuNavBar.Visible = false;
+                 DisableButton();
+
 
         }
 
@@ -281,9 +291,63 @@ namespace CapaPresentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            panelSubMenuNavBar.Visible = true;
+            
             ActivateButton(sender, RGBColors.color2);
+            panelSubMenuNavBar.Visible = true;
             panelSubMenuNavBar.BringToFront();
+
+        }
+
+        private void panelMenu_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void panelPrincipal_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void panelTitulo_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void panelBarra_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void panelUserInformacion_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = false;
+            DisableButton();
+
+
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
 
         }
     }
