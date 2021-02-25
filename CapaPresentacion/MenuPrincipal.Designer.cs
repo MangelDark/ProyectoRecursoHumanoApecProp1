@@ -59,6 +59,9 @@
             this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SubMenuConfig = new System.Windows.Forms.Panel();
+            this.panelSubMenuNavBar = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelBarra.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -68,11 +71,14 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelPrincipal.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelUserInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SubMenuConfig.SuspendLayout();
+            this.panelSubMenuNavBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBarra
@@ -136,34 +142,30 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnCandidato);
-            this.panelMenu.Controls.Add(this.btnCerrarSesion);
-            this.panelMenu.Controls.Add(this.btnCapacitacion);
-            this.panelMenu.Controls.Add(this.btnCompetencia);
             this.panelMenu.Controls.Add(this.panel1);
-            this.panelMenu.Controls.Add(this.btnPuesto);
-            this.panelMenu.Controls.Add(this.btnExperienciaLaboral);
-            this.panelMenu.Controls.Add(this.btnIdioma);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 32);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 627);
+            this.panelMenu.Size = new System.Drawing.Size(207, 627);
             this.panelMenu.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Silver;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1, 493);
+            this.button1.Location = new System.Drawing.Point(0, 137);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.button1.Size = new System.Drawing.Size(200, 63);
+            this.button1.Size = new System.Drawing.Size(207, 63);
             this.button1.TabIndex = 7;
             this.button1.Text = "Empleados";
             this.button1.UseVisualStyleBackColor = false;
@@ -171,16 +173,17 @@
             // btnCandidato
             // 
             this.btnCandidato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCandidato.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCandidato.FlatAppearance.BorderSize = 0;
             this.btnCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCandidato.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCandidato.ForeColor = System.Drawing.Color.Silver;
             this.btnCandidato.Image = ((System.Drawing.Image)(resources.GetObject("btnCandidato.Image")));
             this.btnCandidato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCandidato.Location = new System.Drawing.Point(1, 424);
+            this.btnCandidato.Location = new System.Drawing.Point(0, 74);
             this.btnCandidato.Name = "btnCandidato";
             this.btnCandidato.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnCandidato.Size = new System.Drawing.Size(200, 63);
+            this.btnCandidato.Size = new System.Drawing.Size(207, 63);
             this.btnCandidato.TabIndex = 6;
             this.btnCandidato.Text = "Candidatos";
             this.btnCandidato.UseVisualStyleBackColor = false;
@@ -188,18 +191,17 @@
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
             this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.Silver;
             this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 578);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 67);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnCerrarSesion.Size = new System.Drawing.Size(200, 49);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(232, 49);
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar sesión";
             this.btnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -215,7 +217,7 @@
             this.btnCapacitacion.ForeColor = System.Drawing.Color.Silver;
             this.btnCapacitacion.Image = ((System.Drawing.Image)(resources.GetObject("btnCapacitacion.Image")));
             this.btnCapacitacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapacitacion.Location = new System.Drawing.Point(2, 93);
+            this.btnCapacitacion.Location = new System.Drawing.Point(3, 271);
             this.btnCapacitacion.Name = "btnCapacitacion";
             this.btnCapacitacion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCapacitacion.Size = new System.Drawing.Size(198, 63);
@@ -235,7 +237,7 @@
             this.btnCompetencia.ForeColor = System.Drawing.Color.Silver;
             this.btnCompetencia.Image = ((System.Drawing.Image)(resources.GetObject("btnCompetencia.Image")));
             this.btnCompetencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompetencia.Location = new System.Drawing.Point(1, 159);
+            this.btnCompetencia.Location = new System.Drawing.Point(0, 3);
             this.btnCompetencia.Name = "btnCompetencia";
             this.btnCompetencia.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCompetencia.Size = new System.Drawing.Size(200, 63);
@@ -255,7 +257,7 @@
             this.panel1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 74);
+            this.panel1.Size = new System.Drawing.Size(207, 74);
             this.panel1.TabIndex = 0;
             // 
             // label5
@@ -314,7 +316,7 @@
             this.btnPuesto.ForeColor = System.Drawing.Color.Silver;
             this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
             this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuesto.Location = new System.Drawing.Point(1, 358);
+            this.btnPuesto.Location = new System.Drawing.Point(1, 203);
             this.btnPuesto.Name = "btnPuesto";
             this.btnPuesto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPuesto.Size = new System.Drawing.Size(200, 63);
@@ -332,7 +334,7 @@
             this.btnExperienciaLaboral.ForeColor = System.Drawing.Color.Silver;
             this.btnExperienciaLaboral.Image = ((System.Drawing.Image)(resources.GetObject("btnExperienciaLaboral.Image")));
             this.btnExperienciaLaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExperienciaLaboral.Location = new System.Drawing.Point(1, 225);
+            this.btnExperienciaLaboral.Location = new System.Drawing.Point(0, 135);
             this.btnExperienciaLaboral.Name = "btnExperienciaLaboral";
             this.btnExperienciaLaboral.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnExperienciaLaboral.Size = new System.Drawing.Size(200, 63);
@@ -351,7 +353,7 @@
             this.btnIdioma.ForeColor = System.Drawing.Color.Silver;
             this.btnIdioma.Image = ((System.Drawing.Image)(resources.GetObject("btnIdioma.Image")));
             this.btnIdioma.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIdioma.Location = new System.Drawing.Point(1, 292);
+            this.btnIdioma.Location = new System.Drawing.Point(0, 67);
             this.btnIdioma.Name = "btnIdioma";
             this.btnIdioma.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnIdioma.Size = new System.Drawing.Size(200, 63);
@@ -407,10 +409,12 @@
             // panelPrincipal
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelPrincipal.Controls.Add(this.panelSubMenuNavBar);
+            this.panelPrincipal.Controls.Add(this.SubMenuConfig);
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(200, 104);
+            this.panelPrincipal.Location = new System.Drawing.Point(207, 104);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(900, 555);
+            this.panelPrincipal.Size = new System.Drawing.Size(893, 555);
             this.panelPrincipal.TabIndex = 1;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -422,9 +426,9 @@
             this.panelTitulo.Controls.Add(this.lblTitleChildForm);
             this.panelTitulo.Controls.Add(this.pictureBox2);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitulo.Location = new System.Drawing.Point(200, 32);
+            this.panelTitulo.Location = new System.Drawing.Point(207, 32);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(900, 72);
+            this.panelTitulo.Size = new System.Drawing.Size(893, 72);
             this.panelTitulo.TabIndex = 8;
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 
@@ -436,7 +440,7 @@
             this.panelUserInformacion.Controls.Add(this.lbPosition);
             this.panelUserInformacion.Controls.Add(this.lbName);
             this.panelUserInformacion.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelUserInformacion.Location = new System.Drawing.Point(665, 0);
+            this.panelUserInformacion.Location = new System.Drawing.Point(658, 0);
             this.panelUserInformacion.Name = "panelUserInformacion";
             this.panelUserInformacion.Size = new System.Drawing.Size(235, 72);
             this.panelUserInformacion.TabIndex = 4;
@@ -450,6 +454,8 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            this.pictureBox4.DoubleClick += new System.EventHandler(this.pictureBox4_DoubleClick);
             // 
             // iconCurrentChildForm
             // 
@@ -483,6 +489,51 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
+            // SubMenuConfig
+            // 
+            this.SubMenuConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SubMenuConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
+            this.SubMenuConfig.Controls.Add(this.btnCerrarSesion);
+            this.SubMenuConfig.Location = new System.Drawing.Point(661, 0);
+            this.SubMenuConfig.Name = "SubMenuConfig";
+            this.SubMenuConfig.Size = new System.Drawing.Size(232, 116);
+            this.SubMenuConfig.TabIndex = 0;
+            this.SubMenuConfig.Visible = false;
+            // 
+            // panelSubMenuNavBar
+            // 
+            this.panelSubMenuNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelSubMenuNavBar.Controls.Add(this.btnCompetencia);
+            this.panelSubMenuNavBar.Controls.Add(this.btnIdioma);
+            this.panelSubMenuNavBar.Controls.Add(this.btnCapacitacion);
+            this.panelSubMenuNavBar.Controls.Add(this.btnExperienciaLaboral);
+            this.panelSubMenuNavBar.Controls.Add(this.btnPuesto);
+            this.panelSubMenuNavBar.Location = new System.Drawing.Point(0, 127);
+            this.panelSubMenuNavBar.Name = "panelSubMenuNavBar";
+            this.panelSubMenuNavBar.Size = new System.Drawing.Size(204, 338);
+            this.panelSubMenuNavBar.TabIndex = 1;
+            this.panelSubMenuNavBar.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 200);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.button2.Size = new System.Drawing.Size(207, 63);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Mantenimientos";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +557,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelPrincipal.ResumeLayout(false);
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
             this.panelUserInformacion.ResumeLayout(false);
@@ -513,6 +565,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.SubMenuConfig.ResumeLayout(false);
+            this.panelSubMenuNavBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -549,6 +603,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCandidato;
+        private System.Windows.Forms.Panel SubMenuConfig;
+        private System.Windows.Forms.Panel panelSubMenuNavBar;
+        private System.Windows.Forms.Button button2;
     }
 }
 

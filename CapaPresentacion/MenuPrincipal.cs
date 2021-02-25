@@ -67,8 +67,6 @@ namespace CapaPresentacion
                 //Current Child Form Icon
                 iconCurrentChildForm.Image = currentBtn.Image;
                 lblTitleChildForm.Text = currentBtn.Text;
-
-
             }
         }
         private void DisableButton()
@@ -100,10 +98,6 @@ namespace CapaPresentacion
             childForm.Show();
             lblTitleChildForm.Text = childForm.Text;
         }
-
-    
-
-
         private void Reset()
         {
             DisableButton();
@@ -177,18 +171,30 @@ namespace CapaPresentacion
             FrmCapacitacion frmCapacitacion = new FrmCapacitacion();
             OpenChildForm(frmCapacitacion);
             ActivateButton(sender, RGBColors.color1);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
         }
         private void btnCompetencia_Click(object sender, EventArgs e)
         {
             FrmCompetencia frmCompetencia = new FrmCompetencia();
             OpenChildForm(frmCompetencia);
             ActivateButton(sender, RGBColors.color2);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
         }
         private void btnExperienciaLaboral_Click(object sender, EventArgs e)
         {
             FrmExperienciaLaboral frmExperienciaLaboral = new FrmExperienciaLaboral();
             OpenChildForm(frmExperienciaLaboral);
             ActivateButton(sender, RGBColors.color3);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
 
         }
         private void btnIdioma_Click(object sender, EventArgs e)
@@ -197,12 +203,20 @@ namespace CapaPresentacion
             FrmIdioma frmIdioma = new FrmIdioma();
             OpenChildForm(frmIdioma);
             ActivateButton(sender, RGBColors.color4);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
         }
         private void btnPuesto_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
             FrmPuesto frmPuesto = new FrmPuesto();
             OpenChildForm(frmPuesto);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
 
         }
         private void iconbtnPuesto_Click(object sender, EventArgs e)
@@ -246,6 +260,31 @@ namespace CapaPresentacion
             FrmCandidato frmCandidato = new FrmCandidato();
             OpenChildForm(frmCandidato);
             ActivateButton(sender, RGBColors.color2);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {                  
+                SubMenuConfig.Visible = true;
+                SubMenuConfig.BringToFront();
+                panelSubMenuNavBar.Visible = false;
+
+        }
+
+        private void pictureBox4_DoubleClick(object sender, EventArgs e)
+        {
+            SubMenuConfig.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelSubMenuNavBar.Visible = true;
+            ActivateButton(sender, RGBColors.color2);
+            panelSubMenuNavBar.BringToFront();
+
         }
     }
 }
