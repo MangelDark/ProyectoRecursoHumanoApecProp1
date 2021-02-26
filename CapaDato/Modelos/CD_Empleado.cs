@@ -36,6 +36,7 @@ namespace CapaDato.Modelos
 
         }
 
+     
         public void Insertar(string cedula,string nombre,int id_departamento, int id_puesto, double salario_empleado,DateTime fecha_ingreso_empleado, int estatus)
         {
 

@@ -8,22 +8,23 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio.DTO
 {
-   public class CN_Competencia
+   public class CN_Candidato
     {
-        private CD_Competencia objeto = new CD_Competencia();
+
+        private CD_Candidato objeto = new CD_Candidato();
 
 
         public DataTable Mostrar()
         {
             return objeto.Mostrar();
         }
-        public void Insertar(string desc_competencia, int estatus_competencia)
+        public void Insertar(string cedula, string nombre, string puestoAspira)
         {
-            objeto.Insertar(desc_competencia,Convert.ToInt32(estatus_competencia));
+            objeto.Insertar(cedula, nombre, puestoAspira);
         }
-        public void Editar(string id, string desc_competencia, int estatus_competencia)
+        public void Editar(string id, string cedula, string nombre, string puestoAspira)
         {
-            objeto.Editar(Convert.ToInt32(id), desc_competencia, Convert.ToInt32(estatus_competencia));
+            objeto.Editar(Convert.ToInt32(id), cedula,nombre,puestoAspira);
         }
         public void Elimiar(string id)
         {

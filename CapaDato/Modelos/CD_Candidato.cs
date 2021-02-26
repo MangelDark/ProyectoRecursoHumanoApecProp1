@@ -8,60 +8,90 @@ using System.Threading.Tasks;
 
 namespace CapaDato.Modelos
 {
-   public class CD_Candidato
+   public class CD_Candidato : ConnectionToSql
     {
-        private CD_ContentConnection Con = new CD_ContentConnection();
 
         SqlDataReader leer;
         DataTable table = new DataTable();
-        SqlCommand comando = new SqlCommand();
 
         public DataTable Mostrar()
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "MostrarCandidato";
-            comando.CommandType = CommandType.StoredProcedure;
-            leer = comando.ExecuteReader();
-            table.Load(leer);
-            Con.CerrarConexion();
-            return table;
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var comando =  new SqlCommand())
+                {
+
+                    comando.Connection = conn;
+                    comando.CommandText = "MostrarCandidato";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    leer = comando.ExecuteReader();
+                    table.Load(leer);
+                    return table;
+                }
+            }
+
         }
 
         public void Insertar(string cedula,string nombre,string puestoAspira)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "InsertarCandidato";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@cedula",cedula);
-            comando.Parameters.AddWithValue("@nombre",nombre);
-            comando.Parameters.AddWithValue("@puestoAspira",puestoAspira);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var comando = new SqlCommand())
+                {
+
+                    comando.Connection = conn;
+                    comando.CommandText = "InsertarCandidato";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@cedula",cedula);
+                    comando.Parameters.AddWithValue("@nombre",nombre);
+                    comando.Parameters.AddWithValue("@puestoAspira",puestoAspira);
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            }
        
 
         }
         public void Editar(int id , string cedula, string nombre,string puestoAspira)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EditarCandidato";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@cedula", cedula);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@puestoAspira", puestoAspira);
-            comando.Parameters.AddWithValue("@id", id);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var comando = new SqlCommand())
+                {
+
+                    comando.Connection = conn;
+                    comando.CommandText = "EditarCandidato";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@cedula", cedula);
+                    comando.Parameters.AddWithValue("@nombre", nombre);
+                    comando.Parameters.AddWithValue("@puestoAspira", puestoAspira);
+                    comando.Parameters.AddWithValue("@id", id);
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            }
 
         }
 
         public void Eliminar (int id)
         {
-            comando.Connection = Con.AbriConexion();
-            comando.CommandText = "EliminarCandidato";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id",id);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var comando = new SqlCommand())
+                {
+
+                    comando.Connection = conn;
+                    comando.CommandText = "EliminarCandidato";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@id",id);
+                    comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                }
+            }
         }
     }
 }
