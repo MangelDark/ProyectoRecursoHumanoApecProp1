@@ -12,7 +12,7 @@ namespace CapaDato
         private readonly string connectionString;
         public ConnectionToSql()
         {
-            connectionString = "Server=DESKTOP-OHPALJ2\\MASANCHEZ;DataBase=HR_Management;Integrated Security=true";
+            connectionString = "Server=DESKTOP-4S3OGV7;DataBase=HR_Management;Integrated Security=true";
         }
         protected SqlConnection GetConnection()
         {

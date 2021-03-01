@@ -17,9 +17,9 @@ namespace CapaNegocio.DTO
         {
             return objeto.Mostrar();
         }
-        public void Insertar(string IdCandidato,string puesto, string desde, string hasta)
+        public void Insertar(string id_Candidato,string puesto, string desde, string hasta)
         {
-            objeto.Insertar(Convert.ToInt32(IdCandidato),puesto,Convert.ToDateTime(desde).Date, Convert.ToDateTime(hasta).Date);
+            objeto.Insertar(Convert.ToInt32(id_Candidato), puesto,Convert.ToDateTime(desde).Date, Convert.ToDateTime(hasta).Date);
         }
         public void Editar(string id,string IdCandidato, string puesto, string desde, string hasta)
         {

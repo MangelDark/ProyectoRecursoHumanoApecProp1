@@ -145,6 +145,7 @@ namespace CapaPresentacion.FrmMantenimientos
             if (dgtPuesto.SelectedRows.Count > 0)
             {
                 Editar = true;
+                HideLabelError();
                 idPuesto = dgtPuesto.CurrentRow.Cells["Identificador"].Value.ToString();
                 txtNombre.Text = dgtPuesto.CurrentRow.Cells["Nombre"].Value.ToString();
                 txtNivelSalarioMaximo.Text = dgtPuesto.CurrentRow.Cells["Nivel Del Sueldo Maximo"].Value.ToString();
@@ -166,6 +167,16 @@ namespace CapaPresentacion.FrmMantenimientos
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
+
+        private void HideLabelError()
+        {
+            LbErrorNombre.Visible = false;
+            LbErrorNombre.Text = "";
+            lbSueldoMinimo.Visible = false;
+            lbSueldoMinimo.Text = "";
+            lbSueldoMaximoError.Visible = false;
+            lbSueldoMaximoError.Text = "";
+        }
         //Elimina un registro de puesto
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -183,7 +194,10 @@ namespace CapaPresentacion.FrmMantenimientos
         private void btnClear_Click(object sender, EventArgs e)
         {
             limpiarForm();
-           
+            HideLabelError();
+
+
+
         }
         private void LbErrorNombre_Click(object sender, EventArgs e)
         {

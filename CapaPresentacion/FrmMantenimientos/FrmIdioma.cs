@@ -24,29 +24,33 @@ namespace CapaPresentacion.FrmMantenimientos
         }
 
 
+        #region Funciones
         private void MostrarIdiomas()
         {
             CN_Idioma objetoCN = new CN_Idioma();
             dataGridView1.DataSource = objetoCN.MostrarIdioma();
-
         }
-
-        private void FrmIdioma_Load(object sender, EventArgs e)
+        private void HideLabelError()
         {
-            MostrarIdiomas();
+            lbNombreError.Visible = false;
+            lbPaisError.Visible = false;
         }
-
-        //Es un funcion que limpia los campos es reutilizables
         private void limpiarForm()
         {
 
             txtNombreIdioma.Clear();
             txtPais.Clear();
-          
+
             rdbtnActivo.Checked = true;
             rdbtnInactivo.Checked = false;
             btnSave.Text = "Guardar";
             Editar = false;
+        }
+        #endregion
+
+        private void FrmIdioma_Load(object sender, EventArgs e)
+        {
+            MostrarIdiomas();
         }
         //El boton editar llenas los campos con la fila selecionado de datagridview
         private void btnSave_Click(object sender, EventArgs e)
@@ -124,6 +128,7 @@ namespace CapaPresentacion.FrmMantenimientos
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 Editar = true;
+                HideLabelError();
                 id = dataGridView1.CurrentRow.Cells["Identificador"].Value.ToString();
                 txtNombreIdioma.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
                 txtPais.Text = dataGridView1.CurrentRow.Cells["Pais del idioma"].Value.ToString();
@@ -160,6 +165,7 @@ namespace CapaPresentacion.FrmMantenimientos
         private void btnClear_Click(object sender, EventArgs e)
         {
             limpiarForm();
+            HideLabelError();
         }
 
         private void txtNombreIdioma_Leave(object sender, EventArgs e)
