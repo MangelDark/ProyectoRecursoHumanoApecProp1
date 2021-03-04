@@ -17,7 +17,6 @@ namespace CapaPresentacion.FrmMantenimientos
         CN_ExperienciaLaboral objetoCN = new CN_ExperienciaLaboral();
         private string id = null;
         private bool Editar = false;
-        int Estatus;
         public FrmExperienciaLaboral()
         {
             InitializeComponent();
@@ -56,48 +55,49 @@ namespace CapaPresentacion.FrmMantenimientos
                 //Validamos que el Salario minimo no este vacio
                 if (dateTimeDesde.Text != "")
                 {
-
-                    //Obtenemos el valor de los radioButton
-                    if (dateTimeHasta.Checked)
+                    if (candidatoSelected.SelectedItem.ToString() != "Seleccinar candidato" )
                     {
-                        Estatus = 1;
+                        //INSERTAR
+                        if (Editar == false)
+                        {
+                            try
+                            {
+                                objetoCN.Insertar(candidatoSelected.SelectedIndex.ToString(), txtPuestoOcupado.Text, dateTimeDesde.Text, dateTimeHasta.Text);
+                                MessageBox.Show("se inserto correctamente");
+                                MostrarExperienciaLaboral();
+                                limpiarForm();
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                            }
+                        }
+                        ////EDITAR
+                        if (Editar == true)
+                        {
+                            try
+                            {
+                                objetoCN.Editar(id, candidatoSelected.SelectedIndex.ToString(), txtPuestoOcupado.Text, dateTimeDesde.Text, dateTimeHasta.Text);
+                                MessageBox.Show("se edito correctamente");
+                                MostrarExperienciaLaboral();
+                                limpiarForm();
+                                Editar = false;
+                                btnSave.Text = "Guardar";
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("no se pudo editar los datos por: " + ex);
+                            }
+                        }
                     }
                     else
                     {
-                        Estatus = 0;
+                        ErrorMessageCandidato.Text = "Debe seleccionar un candidato.";
+                        ErrorMessageCandidato.Visible = true;
+                        ErrorMessageCandidato.Focus();
                     }
-                    //INSERTAR
-                    if (Editar == false)
-                    {
-                        try
-                        {
-                            objetoCN.Insertar(candidatoSelected.SelectedIndex.ToString(),txtPuestoOcupado.Text, dateTimeDesde.Text, dateTimeHasta.Text);
-                            MessageBox.Show("se inserto correctamente");
-                            MostrarExperienciaLaboral();
-                            limpiarForm();
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("no se pudo insertar los datos por: " + ex);
-                        }
-                    }
-                    ////EDITAR
-                    if (Editar == true)
-                    {
-                        try
-                        {
-                            objetoCN.Editar(id, candidatoSelected.SelectedIndex.ToString(), txtPuestoOcupado.Text, dateTimeDesde.Text, dateTimeHasta.Text);
-                            MessageBox.Show("se edito correctamente");
-                            MostrarExperienciaLaboral();
-                            limpiarForm();
-                            Editar = false;
-                            btnSave.Text = "Guardar";
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("no se pudo editar los datos por: " + ex);
-                        }
-                    }
+                   
+              
                 }
                 else
                 {

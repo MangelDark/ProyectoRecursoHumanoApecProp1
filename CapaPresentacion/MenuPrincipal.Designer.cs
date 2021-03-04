@@ -35,16 +35,17 @@
             this.btnMaximized = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCandidato = new System.Windows.Forms.Button();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.btnCapacitacion = new System.Windows.Forms.Button();
-            this.btnCompetencia = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbtitulo = new System.Windows.Forms.Label();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnCapacitacion = new System.Windows.Forms.Button();
+            this.btnCompetencia = new System.Windows.Forms.Button();
             this.btnPuesto = new System.Windows.Forms.Button();
             this.btnExperienciaLaboral = new System.Windows.Forms.Button();
             this.btnIdioma = new System.Windows.Forms.Button();
@@ -53,15 +54,15 @@
             this.lbLastName = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.panelSubMenuNavBar = new System.Windows.Forms.Panel();
+            this.SubMenuConfig = new System.Windows.Forms.Panel();
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.panelUserInformacion = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.SubMenuConfig = new System.Windows.Forms.Panel();
-            this.panelSubMenuNavBar = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDepartamento = new System.Windows.Forms.Button();
             this.panelBarra.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -72,13 +73,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelPrincipal.SuspendLayout();
+            this.panelSubMenuNavBar.SuspendLayout();
+            this.SubMenuConfig.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelUserInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SubMenuConfig.SuspendLayout();
-            this.panelSubMenuNavBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBarra
@@ -154,13 +155,34 @@
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Click += new System.EventHandler(this.panelMenu_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 200);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.button2.Size = new System.Drawing.Size(207, 63);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Mantenimientos";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Silver;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,7 +200,7 @@
             this.btnCandidato.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCandidato.FlatAppearance.BorderSize = 0;
             this.btnCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCandidato.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCandidato.ForeColor = System.Drawing.Color.Silver;
             this.btnCandidato.Image = ((System.Drawing.Image)(resources.GetObject("btnCandidato.Image")));
             this.btnCandidato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,13 +213,74 @@
             this.btnCandidato.UseVisualStyleBackColor = false;
             this.btnCandidato.Click += new System.EventHandler(this.btnCandidato_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.lbtitulo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(207, 74);
+            this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(72, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Recursos Humanos";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(117, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "De";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 56);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // lbtitulo
+            // 
+            this.lbtitulo.AutoSize = true;
+            this.lbtitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulo.ForeColor = System.Drawing.Color.Silver;
+            this.lbtitulo.Location = new System.Drawing.Point(101, 8);
+            this.lbtitulo.Name = "lbtitulo";
+            this.lbtitulo.Size = new System.Drawing.Size(57, 16);
+            this.lbtitulo.TabIndex = 6;
+            this.lbtitulo.Text = "Sistema";
+            // 
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
             this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.Silver;
             this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
             this.btnCerrarSesion.Location = new System.Drawing.Point(0, 67);
@@ -215,7 +298,7 @@
             this.btnCapacitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnCapacitacion.FlatAppearance.BorderSize = 0;
             this.btnCapacitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapacitacion.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapacitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapacitacion.ForeColor = System.Drawing.Color.Silver;
             this.btnCapacitacion.Image = ((System.Drawing.Image)(resources.GetObject("btnCapacitacion.Image")));
             this.btnCapacitacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,7 +318,7 @@
             this.btnCompetencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnCompetencia.FlatAppearance.BorderSize = 0;
             this.btnCompetencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompetencia.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompetencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompetencia.ForeColor = System.Drawing.Color.Silver;
             this.btnCompetencia.Image = ((System.Drawing.Image)(resources.GetObject("btnCompetencia.Image")));
             this.btnCompetencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,73 +332,12 @@
             this.btnCompetencia.UseVisualStyleBackColor = false;
             this.btnCompetencia.Click += new System.EventHandler(this.btnCompetencia_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.lbtitulo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(207, 74);
-            this.panel1.TabIndex = 0;
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(72, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Recursos Humanos";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(117, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "De";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 56);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // lbtitulo
-            // 
-            this.lbtitulo.AutoSize = true;
-            this.lbtitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbtitulo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtitulo.ForeColor = System.Drawing.Color.Silver;
-            this.lbtitulo.Location = new System.Drawing.Point(101, 8);
-            this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(57, 17);
-            this.lbtitulo.TabIndex = 6;
-            this.lbtitulo.Text = "Sistema";
-            // 
             // btnPuesto
             // 
             this.btnPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnPuesto.FlatAppearance.BorderSize = 0;
             this.btnPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPuesto.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPuesto.ForeColor = System.Drawing.Color.Silver;
             this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
             this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +355,7 @@
             this.btnExperienciaLaboral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnExperienciaLaboral.FlatAppearance.BorderSize = 0;
             this.btnExperienciaLaboral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExperienciaLaboral.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExperienciaLaboral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExperienciaLaboral.ForeColor = System.Drawing.Color.Silver;
             this.btnExperienciaLaboral.Image = ((System.Drawing.Image)(resources.GetObject("btnExperienciaLaboral.Image")));
             this.btnExperienciaLaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,7 +374,7 @@
             this.btnIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnIdioma.FlatAppearance.BorderSize = 0;
             this.btnIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIdioma.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIdioma.ForeColor = System.Drawing.Color.Silver;
             this.btnIdioma.Image = ((System.Drawing.Image)(resources.GetObject("btnIdioma.Image")));
             this.btnIdioma.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -368,11 +390,11 @@
             // lbPosition
             // 
             this.lbPosition.AutoSize = true;
-            this.lbPosition.Font = new System.Drawing.Font("Industry-Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPosition.ForeColor = System.Drawing.Color.Silver;
             this.lbPosition.Location = new System.Drawing.Point(65, 8);
             this.lbPosition.Name = "lbPosition";
-            this.lbPosition.Size = new System.Drawing.Size(87, 21);
+            this.lbPosition.Size = new System.Drawing.Size(85, 20);
             this.lbPosition.TabIndex = 3;
             this.lbPosition.Text = "TypeUsers";
             // 
@@ -390,22 +412,22 @@
             // lbLastName
             // 
             this.lbLastName.AutoSize = true;
-            this.lbLastName.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLastName.ForeColor = System.Drawing.Color.Silver;
             this.lbLastName.Location = new System.Drawing.Point(66, 46);
             this.lbLastName.Name = "lbLastName";
-            this.lbLastName.Size = new System.Drawing.Size(68, 16);
+            this.lbLastName.Size = new System.Drawing.Size(70, 16);
             this.lbLastName.TabIndex = 1;
             this.lbLastName.Text = "LastName";
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Industry-Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.Silver;
             this.lbName.Location = new System.Drawing.Point(66, 29);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(42, 16);
+            this.lbName.Size = new System.Drawing.Size(45, 16);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Name";
             // 
@@ -421,6 +443,32 @@
             this.panelPrincipal.TabIndex = 1;
             this.panelPrincipal.Click += new System.EventHandler(this.panelPrincipal_Click);
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
+            // 
+            // panelSubMenuNavBar
+            // 
+            this.panelSubMenuNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelSubMenuNavBar.Controls.Add(this.btnCompetencia);
+            this.panelSubMenuNavBar.Controls.Add(this.btnIdioma);
+            this.panelSubMenuNavBar.Controls.Add(this.btnDepartamento);
+            this.panelSubMenuNavBar.Controls.Add(this.btnCapacitacion);
+            this.panelSubMenuNavBar.Controls.Add(this.btnExperienciaLaboral);
+            this.panelSubMenuNavBar.Controls.Add(this.btnPuesto);
+            this.panelSubMenuNavBar.Location = new System.Drawing.Point(0, 127);
+            this.panelSubMenuNavBar.Name = "panelSubMenuNavBar";
+            this.panelSubMenuNavBar.Size = new System.Drawing.Size(204, 428);
+            this.panelSubMenuNavBar.TabIndex = 1;
+            this.panelSubMenuNavBar.Visible = false;
+            // 
+            // SubMenuConfig
+            // 
+            this.SubMenuConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SubMenuConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
+            this.SubMenuConfig.Controls.Add(this.btnCerrarSesion);
+            this.SubMenuConfig.Location = new System.Drawing.Point(661, 0);
+            this.SubMenuConfig.Name = "SubMenuConfig";
+            this.SubMenuConfig.Size = new System.Drawing.Size(232, 116);
+            this.SubMenuConfig.TabIndex = 0;
+            this.SubMenuConfig.Visible = false;
             // 
             // panelTitulo
             // 
@@ -476,11 +524,11 @@
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Silver;
             this.lblTitleChildForm.Location = new System.Drawing.Point(54, 30);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(48, 21);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(46, 20);
             this.lblTitleChildForm.TabIndex = 5;
             this.lblTitleChildForm.Text = "Inicio";
             // 
@@ -495,51 +543,25 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
-            // SubMenuConfig
+            // btnDepartamento
             // 
-            this.SubMenuConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SubMenuConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
-            this.SubMenuConfig.Controls.Add(this.btnCerrarSesion);
-            this.SubMenuConfig.Location = new System.Drawing.Point(661, 0);
-            this.SubMenuConfig.Name = "SubMenuConfig";
-            this.SubMenuConfig.Size = new System.Drawing.Size(232, 116);
-            this.SubMenuConfig.TabIndex = 0;
-            this.SubMenuConfig.Visible = false;
-            // 
-            // panelSubMenuNavBar
-            // 
-            this.panelSubMenuNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelSubMenuNavBar.Controls.Add(this.btnCompetencia);
-            this.panelSubMenuNavBar.Controls.Add(this.btnIdioma);
-            this.panelSubMenuNavBar.Controls.Add(this.btnCapacitacion);
-            this.panelSubMenuNavBar.Controls.Add(this.btnExperienciaLaboral);
-            this.panelSubMenuNavBar.Controls.Add(this.btnPuesto);
-            this.panelSubMenuNavBar.Location = new System.Drawing.Point(0, 127);
-            this.panelSubMenuNavBar.Name = "panelSubMenuNavBar";
-            this.panelSubMenuNavBar.Size = new System.Drawing.Size(204, 338);
-            this.panelSubMenuNavBar.TabIndex = 1;
-            this.panelSubMenuNavBar.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 200);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.button2.Size = new System.Drawing.Size(207, 63);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Mantenimientos";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.btnDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnDepartamento.FlatAppearance.BorderSize = 0;
+            this.btnDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartamento.ForeColor = System.Drawing.Color.Silver;
+            this.btnDepartamento.Image = ((System.Drawing.Image)(resources.GetObject("btnDepartamento.Image")));
+            this.btnDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDepartamento.Location = new System.Drawing.Point(2, 339);
+            this.btnDepartamento.Name = "btnDepartamento";
+            this.btnDepartamento.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnDepartamento.Size = new System.Drawing.Size(198, 63);
+            this.btnDepartamento.TabIndex = 0;
+            this.btnDepartamento.Text = "Departamento";
+            this.btnDepartamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDepartamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDepartamento.UseVisualStyleBackColor = false;
+            this.btnDepartamento.Click += new System.EventHandler(this.btnCapacitacion_Click);
             // 
             // MenuPrincipal
             // 
@@ -565,6 +587,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelPrincipal.ResumeLayout(false);
+            this.panelSubMenuNavBar.ResumeLayout(false);
+            this.SubMenuConfig.ResumeLayout(false);
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
             this.panelUserInformacion.ResumeLayout(false);
@@ -572,8 +596,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.SubMenuConfig.ResumeLayout(false);
-            this.panelSubMenuNavBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -613,6 +635,7 @@
         private System.Windows.Forms.Panel SubMenuConfig;
         private System.Windows.Forms.Panel panelSubMenuNavBar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDepartamento;
     }
 }
 

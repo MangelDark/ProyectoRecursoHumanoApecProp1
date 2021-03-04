@@ -49,6 +49,7 @@
     <Compile Include="Modelos\CD_Capacitacion.cs" />
     <Compile Include="Modelos\CD_Competencia.cs" />
     <Compile Include="Modelos\CD_ExperienciaLaboral.cs" />
+    <Compile Include="Modelos\CD_Departamento.cs" />
     <Compile Include="Modelos\CD_Idioma.cs" />
     <Compile Include="Modelos\CD_Empleado.cs" />
     <Compile Include="Modelos\CD_Puesto.cs" />

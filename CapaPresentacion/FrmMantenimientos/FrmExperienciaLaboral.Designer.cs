@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.ErrorMessageCandidato = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.candidatoSelected = new System.Windows.Forms.ComboBox();
             this.lbPuestoError = new System.Windows.Forms.Label();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -49,9 +53,6 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.candidatoSelected = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ErrorMessageCandidato = new System.Windows.Forms.Label();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.groupBoxExperienciaLab.SuspendLayout();
@@ -62,6 +63,7 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.btnEditar);
             this.panelCampos.Controls.Add(this.ErrorMessageCandidato);
             this.panelCampos.Controls.Add(this.label1);
             this.panelCampos.Controls.Add(this.candidatoSelected);
@@ -79,12 +81,60 @@
             this.panelCampos.TabIndex = 14;
             this.panelCampos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCampos_Paint);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(12, 176);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEditar.Size = new System.Drawing.Size(123, 38);
+            this.btnEditar.TabIndex = 17;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // ErrorMessageCandidato
+            // 
+            this.ErrorMessageCandidato.AutoSize = true;
+            this.ErrorMessageCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorMessageCandidato.ForeColor = System.Drawing.Color.Red;
+            this.ErrorMessageCandidato.Location = new System.Drawing.Point(93, 104);
+            this.ErrorMessageCandidato.Name = "ErrorMessageCandidato";
+            this.ErrorMessageCandidato.Size = new System.Drawing.Size(103, 18);
+            this.ErrorMessageCandidato.TabIndex = 16;
+            this.ErrorMessageCandidato.Text = "ErrorMessage";
+            this.ErrorMessageCandidato.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 18);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Candidato:";
+            // 
+            // candidatoSelected
+            // 
+            this.candidatoSelected.FormattingEnabled = true;
+            this.candidatoSelected.Location = new System.Drawing.Point(95, 80);
+            this.candidatoSelected.Name = "candidatoSelected";
+            this.candidatoSelected.Size = new System.Drawing.Size(160, 21);
+            this.candidatoSelected.TabIndex = 14;
+            // 
             // lbPuestoError
             // 
             this.lbPuestoError.AutoSize = true;
             this.lbPuestoError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPuestoError.ForeColor = System.Drawing.Color.Red;
-            this.lbPuestoError.Location = new System.Drawing.Point(145, 106);
+            this.lbPuestoError.Location = new System.Drawing.Point(145, 44);
             this.lbPuestoError.Name = "lbPuestoError";
             this.lbPuestoError.Size = new System.Drawing.Size(103, 18);
             this.lbPuestoError.TabIndex = 13;
@@ -280,10 +330,9 @@
             this.txtPuestoOcupado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuestoOcupado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuestoOcupado.ForeColor = System.Drawing.Color.White;
-            this.txtPuestoOcupado.Location = new System.Drawing.Point(148, 26);
-            this.txtPuestoOcupado.Multiline = true;
+            this.txtPuestoOcupado.Location = new System.Drawing.Point(148, 18);
             this.txtPuestoOcupado.Name = "txtPuestoOcupado";
-            this.txtPuestoOcupado.Size = new System.Drawing.Size(158, 70);
+            this.txtPuestoOcupado.Size = new System.Drawing.Size(158, 19);
             this.txtPuestoOcupado.TabIndex = 5;
             // 
             // shapeContainer1
@@ -304,8 +353,8 @@
             this.lineShape1.Name = "lineShape1";
             this.lineShape1.X1 = 146;
             this.lineShape1.X2 = 307;
-            this.lineShape1.Y1 = 103;
-            this.lineShape1.Y2 = 103;
+            this.lineShape1.Y1 = 40;
+            this.lineShape1.Y2 = 40;
             // 
             // panel1
             // 
@@ -318,43 +367,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(900, 338);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // candidatoSelected
-            // 
-            this.candidatoSelected.FormattingEnabled = true;
-            this.candidatoSelected.Location = new System.Drawing.Point(146, 145);
-            this.candidatoSelected.Name = "candidatoSelected";
-            this.candidatoSelected.Size = new System.Drawing.Size(160, 21);
-            this.candidatoSelected.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(61, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 18);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Candidato:";
-            // 
-            // ErrorMessageCandidato
-            // 
-            this.ErrorMessageCandidato.AutoSize = true;
-            this.ErrorMessageCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorMessageCandidato.ForeColor = System.Drawing.Color.Red;
-            this.ErrorMessageCandidato.Location = new System.Drawing.Point(145, 169);
-            this.ErrorMessageCandidato.Name = "ErrorMessageCandidato";
-            this.ErrorMessageCandidato.Size = new System.Drawing.Size(103, 18);
-            this.ErrorMessageCandidato.TabIndex = 16;
-            this.ErrorMessageCandidato.Text = "ErrorMessage";
-            this.ErrorMessageCandidato.Visible = false;
             // 
             // FrmExperienciaLaboral
             // 
@@ -404,5 +423,6 @@
         private System.Windows.Forms.Label ErrorMessageCandidato;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox candidatoSelected;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

@@ -98,6 +98,12 @@
     <Compile Include="FrmMantenimientos\FrmIdioma.Designer.cs">
       <DependentUpon>FrmIdioma.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMantenimientos\FrmDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientos\FrmDepartamento.Designer.cs">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMantenimientos\FrmPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientos\FrmIdioma.resx">
       <DependentUpon>FrmIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientos\FrmDepartamento.resx">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientos\FrmPuesto.resx">
       <DependentUpon>FrmPuesto.cs</DependentUpon>

@@ -47,6 +47,7 @@
     <Compile Include="DTO\CN_Competencia.cs" />
     <Compile Include="DTO\CN_Empleado.cs" />
     <Compile Include="DTO\CN_ExperienciaLaboral.cs" />
+    <Compile Include="DTO\CN_Departamento.cs" />
     <Compile Include="DTO\CN_Idioma.cs" />
     <Compile Include="DTO\CN_Puesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

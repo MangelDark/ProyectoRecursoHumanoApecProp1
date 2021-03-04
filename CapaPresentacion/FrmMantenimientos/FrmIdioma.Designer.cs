@@ -55,6 +55,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 216);
@@ -66,22 +67,22 @@
             // 
             this.txtNombreIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.txtNombreIdioma.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreIdioma.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreIdioma.ForeColor = System.Drawing.Color.White;
             this.txtNombreIdioma.Location = new System.Drawing.Point(134, 13);
             this.txtNombreIdioma.Name = "txtNombreIdioma";
-            this.txtNombreIdioma.Size = new System.Drawing.Size(216, 21);
+            this.txtNombreIdioma.Size = new System.Drawing.Size(216, 19);
             this.txtNombreIdioma.TabIndex = 5;
             this.txtNombreIdioma.Leave += new System.EventHandler(this.txtNombreIdioma_Leave);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(381, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.Size = new System.Drawing.Size(110, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = " País de origen:";
             // 
@@ -89,11 +90,11 @@
             // 
             this.txtPais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.txtPais.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPais.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPais.ForeColor = System.Drawing.Color.White;
             this.txtPais.Location = new System.Drawing.Point(498, 15);
             this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(120, 21);
+            this.txtPais.Size = new System.Drawing.Size(120, 19);
             this.txtPais.TabIndex = 8;
             this.txtPais.Leave += new System.EventHandler(this.txtPais_Leave);
             // 
@@ -101,7 +102,7 @@
             // 
             this.groupBoxEstatus.Controls.Add(this.rdbtnInactivo);
             this.groupBoxEstatus.Controls.Add(this.rdbtnActivo);
-            this.groupBoxEstatus.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxEstatus.ForeColor = System.Drawing.Color.White;
             this.groupBoxEstatus.Location = new System.Drawing.Point(20, 77);
             this.groupBoxEstatus.Name = "groupBoxEstatus";
@@ -115,7 +116,7 @@
             this.rdbtnInactivo.AutoSize = true;
             this.rdbtnInactivo.Location = new System.Drawing.Point(129, 33);
             this.rdbtnInactivo.Name = "rdbtnInactivo";
-            this.rdbtnInactivo.Size = new System.Drawing.Size(80, 24);
+            this.rdbtnInactivo.Size = new System.Drawing.Size(76, 22);
             this.rdbtnInactivo.TabIndex = 1;
             this.rdbtnInactivo.Text = "Inactivo";
             this.rdbtnInactivo.UseVisualStyleBackColor = true;
@@ -126,7 +127,7 @@
             this.rdbtnActivo.Checked = true;
             this.rdbtnActivo.Location = new System.Drawing.Point(21, 33);
             this.rdbtnActivo.Name = "rdbtnActivo";
-            this.rdbtnActivo.Size = new System.Drawing.Size(70, 24);
+            this.rdbtnActivo.Size = new System.Drawing.Size(66, 22);
             this.rdbtnActivo.TabIndex = 0;
             this.rdbtnActivo.TabStop = true;
             this.rdbtnActivo.Text = "Activo";
@@ -135,11 +136,11 @@
             // lbNombre
             // 
             this.lbNombre.AutoSize = true;
-            this.lbNombre.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.ForeColor = System.Drawing.Color.White;
             this.lbNombre.Location = new System.Drawing.Point(16, 18);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(115, 20);
+            this.lbNombre.Size = new System.Drawing.Size(114, 18);
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre idioma:";
             // 
@@ -168,7 +169,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Location = new System.Drawing.Point(20, 172);
@@ -184,11 +185,11 @@
             // lbPaisError
             // 
             this.lbPaisError.AutoSize = true;
-            this.lbPaisError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPaisError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPaisError.ForeColor = System.Drawing.Color.Red;
             this.lbPaisError.Location = new System.Drawing.Point(486, 43);
             this.lbPaisError.Name = "lbPaisError";
-            this.lbPaisError.Size = new System.Drawing.Size(109, 20);
+            this.lbPaisError.Size = new System.Drawing.Size(103, 18);
             this.lbPaisError.TabIndex = 18;
             this.lbPaisError.Text = "ErrorMessage";
             this.lbPaisError.Visible = false;
@@ -196,11 +197,11 @@
             // lbNombreError
             // 
             this.lbNombreError.AutoSize = true;
-            this.lbNombreError.Font = new System.Drawing.Font("Industry-Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreError.ForeColor = System.Drawing.Color.Red;
             this.lbNombreError.Location = new System.Drawing.Point(131, 43);
             this.lbNombreError.Name = "lbNombreError";
-            this.lbNombreError.Size = new System.Drawing.Size(109, 20);
+            this.lbNombreError.Size = new System.Drawing.Size(103, 18);
             this.lbNombreError.TabIndex = 17;
             this.lbNombreError.Text = "ErrorMessage";
             this.lbNombreError.Visible = false;
@@ -221,7 +222,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.Location = new System.Drawing.Point(19, 145);
@@ -240,7 +241,7 @@
             this.btnClear.BackColor = System.Drawing.Color.CadetBlue;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.Location = new System.Drawing.Point(19, 79);
@@ -259,7 +260,7 @@
             this.btnSave.BackColor = System.Drawing.Color.LimeGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(19, 12);
