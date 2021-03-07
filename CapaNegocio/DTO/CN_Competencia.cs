@@ -17,11 +17,11 @@ namespace CapaNegocio.DTO
         {
             return objeto.Mostrar();
         }
-        public void Insertar(string desc_competencia, int estatus_competencia)
+        public void Insertar(string desc_competencia, string estatus_competencia)
         {
             objeto.Insertar(desc_competencia,Convert.ToInt32(estatus_competencia));
         }
-        public void Editar(string id, string desc_competencia, int estatus_competencia)
+        public void Editar(string id, string desc_competencia, string estatus_competencia)
         {
             objeto.Editar(Convert.ToInt32(id), desc_competencia, Convert.ToInt32(estatus_competencia));
         }

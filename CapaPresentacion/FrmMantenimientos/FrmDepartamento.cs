@@ -45,7 +45,9 @@ namespace CapaPresentacion.FrmMantenimientos
             dgDepartamento.DataSource = objeto.Mostrar();
             //cargarCheck(dgtPuesto,objeto.MostrarPuesto());
         }
+        //Es un funcion que limpia los campos es reutilizables
    
+
         //Boton Guardar
         private void btnSave_Click(object sender, EventArgs e)
         {

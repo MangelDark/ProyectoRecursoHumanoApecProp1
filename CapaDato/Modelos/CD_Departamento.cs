@@ -45,9 +45,10 @@ namespace CapaDato.Modelos
                     comando.Connection = conn;
                     comando.CommandText = "InsertarDepartamento";
                     comando.CommandType = CommandType.StoredProcedure;
-                    comando.Parameters.AddWithValue("@nombre", nombre);
+                    comando.Parameters.AddWithValue("@departamento", nombre);
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
+
                 }
             }
                 
@@ -64,7 +65,7 @@ namespace CapaDato.Modelos
                     comando.CommandText = "EditarDepartamento";
                     comando.CommandType = CommandType.StoredProcedure;
                     comando.Parameters.AddWithValue("@id", id);
-                    comando.Parameters.AddWithValue("@nombre", nombre);
+                    comando.Parameters.AddWithValue("@departamento", nombre);
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
                 }

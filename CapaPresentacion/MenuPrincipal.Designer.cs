@@ -62,7 +62,7 @@
             this.iconCurrentChildForm = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnDepartamento = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelBarra.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -447,9 +447,9 @@
             // panelSubMenuNavBar
             // 
             this.panelSubMenuNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelSubMenuNavBar.Controls.Add(this.button3);
             this.panelSubMenuNavBar.Controls.Add(this.btnCompetencia);
             this.panelSubMenuNavBar.Controls.Add(this.btnIdioma);
-            this.panelSubMenuNavBar.Controls.Add(this.btnDepartamento);
             this.panelSubMenuNavBar.Controls.Add(this.btnCapacitacion);
             this.panelSubMenuNavBar.Controls.Add(this.btnExperienciaLaboral);
             this.panelSubMenuNavBar.Controls.Add(this.btnPuesto);
@@ -543,25 +543,25 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
-            // btnDepartamento
+            // button3
             // 
-            this.btnDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnDepartamento.FlatAppearance.BorderSize = 0;
-            this.btnDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepartamento.ForeColor = System.Drawing.Color.Silver;
-            this.btnDepartamento.Image = ((System.Drawing.Image)(resources.GetObject("btnDepartamento.Image")));
-            this.btnDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamento.Location = new System.Drawing.Point(2, 339);
-            this.btnDepartamento.Name = "btnDepartamento";
-            this.btnDepartamento.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnDepartamento.Size = new System.Drawing.Size(198, 63);
-            this.btnDepartamento.TabIndex = 0;
-            this.btnDepartamento.Text = "Departamento";
-            this.btnDepartamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDepartamento.UseVisualStyleBackColor = false;
-            this.btnDepartamento.Click += new System.EventHandler(this.btnCapacitacion_Click);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Silver;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 340);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.button3.Size = new System.Drawing.Size(198, 63);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Departamento";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MenuPrincipal
             // 
@@ -635,7 +635,7 @@
         private System.Windows.Forms.Panel SubMenuConfig;
         private System.Windows.Forms.Panel panelSubMenuNavBar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnDepartamento;
+        private System.Windows.Forms.Button button3;
     }
 }
 

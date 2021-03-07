@@ -53,7 +53,7 @@ namespace CapaPresentacion.FrmMantenimientos
             if (txtPuestoOcupado.Text != "")
             {
                 //Validamos que el Salario minimo no este vacio
-                if (dateTimeDesde.Text != "")
+                if (dateTimeDesde.Text != "" && dateTimeDesde.Value.Date != dateTimeHasta.Value.Date && dateTimeDesde.Value.Date < dateTimeHasta.Value.Date)
                 {
                     if (candidatoSelected.SelectedItem.ToString() != "Seleccinar candidato" )
                     {
@@ -142,6 +142,63 @@ namespace CapaPresentacion.FrmMantenimientos
         private void FrmExperienciaLaboral_Load(object sender, EventArgs e)
         {
             MostrarExperienciaLaboral();
+            candidatoSelected.SelectedIndex = 0;
+        }
+
+        private void txtPuestoOcupado_Leave(object sender, EventArgs e)
+        {
+            if (txtPuestoOcupado.Text != "")
+            {
+                lbPuestoError.Visible = false;
+                lbPuestoError.Text = "";
+            }
+        }
+
+        private void dateTimeDesde_Leave(object sender, EventArgs e)
+        {
+            if (dateTimeDesde.Value.Date == dateTimeHasta.Value.Date)
+            {
+                lbDesdeError.Visible = true;
+                lbDesdeError.Text = "No puede ser igual a la fecha hasta.";
+
+            }
+            else if (dateTimeDesde.Value.Date > dateTimeHasta.Value.Date)
+            {
+                lbDesdeError.Visible = true;
+                lbDesdeError.Text = "No puede ser mayor que la fecha hasta.";
+            }
+        }
+
+        private void dateTimeHasta_Leave(object sender, EventArgs e)
+        {
+            if (dateTimeHasta.Value.Date == dateTimeDesde.Value.Date)
+            {
+                lbHastaError.Visible = true;
+                lbHastaError.Text = "No puede ser igual a la fecha desde.";
+
+            }
+            else if (dateTimeHasta.Value.Date < dateTimeDesde.Value.Date)
+            {
+                lbHastaError.Visible = true;
+                lbHastaError.Text = "No puede ser menor que la fecha desde.";
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Editar = true;
+                HideLabelError();
+                id = dataGridView1.CurrentRow.Cells["Identificador"].Value.ToString();
+                txtPuestoOcupado.Text = dataGridView1.CurrentRow.Cells["Puesto que ocupa"].Value.ToString();
+                dateTimeDesde.Text = dataGridView1.CurrentRow.Cells["Experiencia Desde"].Value.ToString();
+                dateTimeDesde.Text = dataGridView1.CurrentRow.Cells["Experiencia Hasta"].Value.ToString();
+                candidatoSelected.SelectedIndex =Convert.ToInt32( dataGridView1.CurrentRow.Cells["Identificador del candidato"]);
+                btnSave.Text = "Guardar cambios";
+            }
+            else
+                MessageBox.Show("seleccione una fila por favor");
         }
     }
 }

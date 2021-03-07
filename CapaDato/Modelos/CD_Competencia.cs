@@ -43,8 +43,8 @@ namespace CapaDato.Modelos
                     comando.Connection = conn;
                     comando.CommandText = "InsertarCompentencia";
                     comando.CommandType = CommandType.StoredProcedure;
-                    comando.Parameters.AddWithValue("@desc_competencia", desc_competencia);
-                    comando.Parameters.AddWithValue("estatus_competencia", estatus_competencia);
+                    comando.Parameters.AddWithValue("@descripcion", desc_competencia);
+                    comando.Parameters.AddWithValue("@estado", estatus_competencia);
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
                 }

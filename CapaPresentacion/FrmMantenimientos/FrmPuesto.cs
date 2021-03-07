@@ -309,5 +309,10 @@ namespace CapaPresentacion.FrmMantenimientos
                 }
             }
         }
+
+        private void panelCampos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -56,13 +56,13 @@
             this.panel1.Size = new System.Drawing.Size(883, 328);
             this.panel1.TabIndex = 13;
             // 
-            // dgtPuesto
+            // dgDepartamento
             // 
             this.dgDepartamento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDepartamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgDepartamento.Location = new System.Drawing.Point(0, 0);
-            this.dgDepartamento.Name = "dgtPuesto";
+            this.dgDepartamento.Name = "dgDepartamento";
             this.dgDepartamento.Size = new System.Drawing.Size(883, 328);
             this.dgDepartamento.TabIndex = 0;
             this.dgDepartamento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtPuesto_CellContentClick);
@@ -73,9 +73,10 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.White;
-            this.txtNombre.Location = new System.Drawing.Point(90, 13);
+            this.txtNombre.Location = new System.Drawing.Point(89, 18);
+            this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(216, 19);
+            this.txtNombre.Size = new System.Drawing.Size(529, 62);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
@@ -178,7 +179,7 @@
             this.LbErrorNombre.AutoSize = true;
             this.LbErrorNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbErrorNombre.ForeColor = System.Drawing.Color.Red;
-            this.LbErrorNombre.Location = new System.Drawing.Point(87, 52);
+            this.LbErrorNombre.Location = new System.Drawing.Point(87, 93);
             this.LbErrorNombre.Name = "LbErrorNombre";
             this.LbErrorNombre.Size = new System.Drawing.Size(72, 16);
             this.LbErrorNombre.TabIndex = 16;
@@ -218,10 +219,10 @@
             this.lineShape1.BorderColor = System.Drawing.Color.White;
             this.lineShape1.BorderWidth = 2;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 87;
-            this.lineShape1.X2 = 307;
-            this.lineShape1.Y1 = 38;
-            this.lineShape1.Y2 = 38;
+            this.lineShape1.X1 = 85;
+            this.lineShape1.X2 = 616;
+            this.lineShape1.Y1 = 83;
+            this.lineShape1.Y2 = 83;
             // 
             // FrmDepartamento
             // 

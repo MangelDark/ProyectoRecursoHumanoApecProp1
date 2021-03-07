@@ -350,5 +350,14 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmDepartamento frmDepartamento = new FrmDepartamento();
+            OpenChildForm(frmDepartamento);
+            ActivateButton(sender, RGBColors.color2);
+            SubMenuConfig.Visible = false;
+            panelSubMenuNavBar.Visible = false;
+        }
     }
 }

@@ -54,6 +54,7 @@
     <Compile Include="Modelos\CD_Empleado.cs" />
     <Compile Include="Modelos\CD_Puesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsQuery\ReportPuesto.cs" />
     <Compile Include="TBUsers\UserDao.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,5 +63,6 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

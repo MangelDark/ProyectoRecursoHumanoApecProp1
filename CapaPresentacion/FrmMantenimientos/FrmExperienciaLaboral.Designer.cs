@@ -89,7 +89,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(12, 176);
+            this.btnEditar.Location = new System.Drawing.Point(12, 172);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnEditar.Size = new System.Drawing.Size(123, 38);
@@ -97,13 +97,14 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // ErrorMessageCandidato
             // 
             this.ErrorMessageCandidato.AutoSize = true;
             this.ErrorMessageCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorMessageCandidato.ForeColor = System.Drawing.Color.Red;
-            this.ErrorMessageCandidato.Location = new System.Drawing.Point(93, 104);
+            this.ErrorMessageCandidato.Location = new System.Drawing.Point(94, 107);
             this.ErrorMessageCandidato.Name = "ErrorMessageCandidato";
             this.ErrorMessageCandidato.Size = new System.Drawing.Size(103, 18);
             this.ErrorMessageCandidato.TabIndex = 16;
@@ -124,9 +125,11 @@
             // candidatoSelected
             // 
             this.candidatoSelected.FormattingEnabled = true;
+            this.candidatoSelected.Items.AddRange(new object[] {
+            "Seleccinar candidato"});
             this.candidatoSelected.Location = new System.Drawing.Point(95, 80);
             this.candidatoSelected.Name = "candidatoSelected";
-            this.candidatoSelected.Size = new System.Drawing.Size(160, 21);
+            this.candidatoSelected.Size = new System.Drawing.Size(211, 21);
             this.candidatoSelected.TabIndex = 14;
             // 
             // lbPuestoError
@@ -241,7 +244,7 @@
             this.lbHastaError.AutoSize = true;
             this.lbHastaError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHastaError.ForeColor = System.Drawing.Color.Red;
-            this.lbHastaError.Location = new System.Drawing.Point(66, 143);
+            this.lbHastaError.Location = new System.Drawing.Point(7, 137);
             this.lbHastaError.Name = "lbHastaError";
             this.lbHastaError.Size = new System.Drawing.Size(103, 18);
             this.lbHastaError.TabIndex = 12;
@@ -253,7 +256,7 @@
             this.lbDesdeError.AutoSize = true;
             this.lbDesdeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDesdeError.ForeColor = System.Drawing.Color.Red;
-            this.lbDesdeError.Location = new System.Drawing.Point(66, 69);
+            this.lbDesdeError.Location = new System.Drawing.Point(6, 62);
             this.lbDesdeError.Name = "lbDesdeError";
             this.lbDesdeError.Size = new System.Drawing.Size(103, 18);
             this.lbDesdeError.TabIndex = 11;
@@ -270,6 +273,7 @@
             this.dateTimeHasta.Name = "dateTimeHasta";
             this.dateTimeHasta.Size = new System.Drawing.Size(200, 24);
             this.dateTimeHasta.TabIndex = 10;
+            this.dateTimeHasta.Leave += new System.EventHandler(this.dateTimeHasta_Leave);
             // 
             // dateTimeDesde
             // 
@@ -279,6 +283,7 @@
             this.dateTimeDesde.Name = "dateTimeDesde";
             this.dateTimeDesde.Size = new System.Drawing.Size(200, 24);
             this.dateTimeDesde.TabIndex = 9;
+            this.dateTimeDesde.Leave += new System.EventHandler(this.dateTimeDesde_Leave);
             // 
             // label4
             // 
@@ -334,6 +339,7 @@
             this.txtPuestoOcupado.Name = "txtPuestoOcupado";
             this.txtPuestoOcupado.Size = new System.Drawing.Size(158, 19);
             this.txtPuestoOcupado.TabIndex = 5;
+            this.txtPuestoOcupado.Leave += new System.EventHandler(this.txtPuestoOcupado_Leave);
             // 
             // shapeContainer1
             // 

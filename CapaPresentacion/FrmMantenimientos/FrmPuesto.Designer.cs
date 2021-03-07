@@ -64,44 +64,44 @@
             // lbNombre
             // 
             this.lbNombre.AutoSize = true;
-            this.lbNombre.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.ForeColor = System.Drawing.Color.White;
             this.lbNombre.Location = new System.Drawing.Point(16, 18);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(66, 20);
+            this.lbNombre.Size = new System.Drawing.Size(66, 18);
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(16, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 20);
+            this.label2.Size = new System.Drawing.Size(158, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nivel de riesgo puesto:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(316, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 20);
+            this.label3.Size = new System.Drawing.Size(172, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nivel maximo del salario:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(312, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 20);
+            this.label4.Size = new System.Drawing.Size(168, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nivel minimo del salario:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -110,11 +110,11 @@
             // 
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.White;
             this.txtNombre.Location = new System.Drawing.Point(90, 13);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(216, 21);
+            this.txtNombre.Size = new System.Drawing.Size(216, 19);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
@@ -122,11 +122,11 @@
             // 
             this.txtNivelSalarioMaximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.txtNivelSalarioMaximo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNivelSalarioMaximo.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNivelSalarioMaximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelSalarioMaximo.ForeColor = System.Drawing.Color.White;
             this.txtNivelSalarioMaximo.Location = new System.Drawing.Point(499, 86);
             this.txtNivelSalarioMaximo.Name = "txtNivelSalarioMaximo";
-            this.txtNivelSalarioMaximo.Size = new System.Drawing.Size(120, 21);
+            this.txtNivelSalarioMaximo.Size = new System.Drawing.Size(120, 19);
             this.txtNivelSalarioMaximo.TabIndex = 7;
             this.txtNivelSalarioMaximo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNivelSalarioMaximo_KeyPress);
             this.txtNivelSalarioMaximo.Leave += new System.EventHandler(this.txtNivelSalarioMaximo_Leave);
@@ -135,11 +135,11 @@
             // 
             this.txtNivelMinimoSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
             this.txtNivelMinimoSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNivelMinimoSalario.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNivelMinimoSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelMinimoSalario.ForeColor = System.Drawing.Color.White;
             this.txtNivelMinimoSalario.Location = new System.Drawing.Point(498, 15);
             this.txtNivelMinimoSalario.Name = "txtNivelMinimoSalario";
-            this.txtNivelMinimoSalario.Size = new System.Drawing.Size(120, 21);
+            this.txtNivelMinimoSalario.Size = new System.Drawing.Size(120, 19);
             this.txtNivelMinimoSalario.TabIndex = 8;
             this.txtNivelMinimoSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNivelMinimoSalario_KeyPress);
             this.txtNivelMinimoSalario.Leave += new System.EventHandler(this.txtNivelMinimoSalario_Leave);
@@ -148,7 +148,7 @@
             // 
             this.groupBox1.Controls.Add(this.rdBtnInactivo);
             this.groupBox1.Controls.Add(this.rdBtnActivo);
-            this.groupBox1.Font = new System.Drawing.Font("Industry-Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(20, 125);
             this.groupBox1.Name = "groupBox1";
@@ -162,7 +162,7 @@
             this.rdBtnInactivo.AutoSize = true;
             this.rdBtnInactivo.Location = new System.Drawing.Point(129, 33);
             this.rdBtnInactivo.Name = "rdBtnInactivo";
-            this.rdBtnInactivo.Size = new System.Drawing.Size(80, 24);
+            this.rdBtnInactivo.Size = new System.Drawing.Size(76, 22);
             this.rdBtnInactivo.TabIndex = 1;
             this.rdBtnInactivo.Text = "Inactivo";
             this.rdBtnInactivo.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@
             this.rdBtnActivo.Checked = true;
             this.rdBtnActivo.Location = new System.Drawing.Point(21, 33);
             this.rdBtnActivo.Name = "rdBtnActivo";
-            this.rdBtnActivo.Size = new System.Drawing.Size(70, 24);
+            this.rdBtnActivo.Size = new System.Drawing.Size(66, 22);
             this.rdBtnActivo.TabIndex = 0;
             this.rdBtnActivo.TabStop = true;
             this.rdBtnActivo.Text = "Activo";
@@ -203,15 +203,16 @@
             this.panelCampos.Name = "panelCampos";
             this.panelCampos.Size = new System.Drawing.Size(883, 268);
             this.panelCampos.TabIndex = 12;
+            this.panelCampos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCampos_Paint);
             // 
             // lbSueldoMaximoError
             // 
             this.lbSueldoMaximoError.AutoSize = true;
-            this.lbSueldoMaximoError.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMaximoError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSueldoMaximoError.ForeColor = System.Drawing.Color.Red;
             this.lbSueldoMaximoError.Location = new System.Drawing.Point(496, 114);
             this.lbSueldoMaximoError.Name = "lbSueldoMaximoError";
-            this.lbSueldoMaximoError.Size = new System.Drawing.Size(109, 17);
+            this.lbSueldoMaximoError.Size = new System.Drawing.Size(113, 16);
             this.lbSueldoMaximoError.TabIndex = 18;
             this.lbSueldoMaximoError.Text = "LbSalarioMaximo";
             this.lbSueldoMaximoError.Visible = false;
@@ -219,11 +220,11 @@
             // lbSueldoMinimo
             // 
             this.lbSueldoMinimo.AutoSize = true;
-            this.lbSueldoMinimo.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSueldoMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSueldoMinimo.ForeColor = System.Drawing.Color.Red;
             this.lbSueldoMinimo.Location = new System.Drawing.Point(496, 41);
             this.lbSueldoMinimo.Name = "lbSueldoMinimo";
-            this.lbSueldoMinimo.Size = new System.Drawing.Size(105, 17);
+            this.lbSueldoMinimo.Size = new System.Drawing.Size(109, 16);
             this.lbSueldoMinimo.TabIndex = 17;
             this.lbSueldoMinimo.Text = "LbSalarioMinimo";
             this.lbSueldoMinimo.Visible = false;
@@ -231,11 +232,11 @@
             // LbErrorNombre
             // 
             this.LbErrorNombre.AutoSize = true;
-            this.LbErrorNombre.Font = new System.Drawing.Font("Industry-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbErrorNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbErrorNombre.ForeColor = System.Drawing.Color.Red;
             this.LbErrorNombre.Location = new System.Drawing.Point(87, 40);
             this.LbErrorNombre.Name = "LbErrorNombre";
-            this.LbErrorNombre.Size = new System.Drawing.Size(69, 17);
+            this.LbErrorNombre.Size = new System.Drawing.Size(72, 16);
             this.LbErrorNombre.TabIndex = 16;
             this.LbErrorNombre.Text = "LbNombre";
             this.LbErrorNombre.Visible = false;
@@ -246,7 +247,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Location = new System.Drawing.Point(9, 224);
@@ -275,7 +276,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.Location = new System.Drawing.Point(19, 145);
@@ -293,7 +294,7 @@
             this.btnClear.BackColor = System.Drawing.Color.CadetBlue;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.Location = new System.Drawing.Point(19, 79);
@@ -311,7 +312,7 @@
             this.btnSave.BackColor = System.Drawing.Color.LimeGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Industry-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(19, 12);
