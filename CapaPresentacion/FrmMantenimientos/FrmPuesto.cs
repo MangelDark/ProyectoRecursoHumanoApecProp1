@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 using CapaNegocio.DTO;
-
+using CapaNegocio.Tablas;
+using CapaPresentacion.ReportView;
 
 namespace CapaPresentacion.FrmMantenimientos
 {
@@ -195,9 +197,6 @@ namespace CapaPresentacion.FrmMantenimientos
         {
             limpiarForm();
             HideLabelError();
-
-
-
         }
         private void LbErrorNombre_Click(object sender, EventArgs e)
         {
@@ -313,6 +312,13 @@ namespace CapaPresentacion.FrmMantenimientos
         private void panelCampos_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            Form1 repport =  new Form1();
+            repport.ShowDialog();
         }
     }
 }

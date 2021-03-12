@@ -54,6 +54,7 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgtPuesto = new System.Windows.Forms.DataGridView();
+            this.btnReport = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panelCampos.SuspendLayout();
             this.panelButtons.SuspendLayout();
@@ -182,6 +183,7 @@
             // panelCampos
             // 
             this.panelCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.panelCampos.Controls.Add(this.btnReport);
             this.panelCampos.Controls.Add(this.lbSueldoMaximoError);
             this.panelCampos.Controls.Add(this.lbSueldoMinimo);
             this.panelCampos.Controls.Add(this.LbErrorNombre);
@@ -403,6 +405,24 @@
             this.dgtPuesto.TabIndex = 0;
             this.dgtPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtPuesto_CellContentClick);
             // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.White;
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.Location = new System.Drawing.Point(143, 224);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnReport.Size = new System.Drawing.Size(123, 38);
+            this.btnReport.TabIndex = 19;
+            this.btnReport.Text = "Reporte";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // FrmPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,5 +475,6 @@
         private System.Windows.Forms.Label lbSueldoMinimo;
         private System.Windows.Forms.Label LbErrorNombre;
         public System.Windows.Forms.DataGridView dgtPuesto;
+        private System.Windows.Forms.Button btnReport;
     }
 }

@@ -33,7 +33,7 @@ namespace CapaDato.Modelos
 
         }
 
-        public void Insertar(string cedula,string nombre,string puestoAspira)
+        public void Insertar(string cedula,string nombre,string puestoAspira,int candidato,decimal salario)
         {
             using (var conn = GetConnection())
             {
@@ -47,6 +47,8 @@ namespace CapaDato.Modelos
                     comando.Parameters.AddWithValue("@cedula",cedula);
                     comando.Parameters.AddWithValue("@nombre",nombre);
                     comando.Parameters.AddWithValue("@puestoAspira",puestoAspira);
+                    comando.Parameters.AddWithValue("@Candidato", candidato);
+                    comando.Parameters.AddWithValue("@Salario", salario);
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
                 }
@@ -54,7 +56,7 @@ namespace CapaDato.Modelos
        
 
         }
-        public void Editar(int id , string cedula, string nombre,string puestoAspira)
+        public void Editar(int id , string cedula, string nombre,string puestoAspira, int candidato, decimal salario)
         {
             using (var conn = GetConnection())
             {
@@ -68,6 +70,8 @@ namespace CapaDato.Modelos
                     comando.Parameters.AddWithValue("@cedula", cedula);
                     comando.Parameters.AddWithValue("@nombre", nombre);
                     comando.Parameters.AddWithValue("@puestoAspira", puestoAspira);
+                    comando.Parameters.AddWithValue("@Candidato", candidato);
+                    comando.Parameters.AddWithValue("@Salario", salario);
                     comando.Parameters.AddWithValue("@id", id);
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();

@@ -1,4 +1,5 @@
-﻿using CapaNegocio.Tablas;
+﻿using CapaDato.Modelos;
+using CapaNegocio.Tablas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,10 @@ namespace CapaNegocio
         public List<PuestoDTO> puestoLista { get;  set; }
         public void createPuestoReport()
         {
+            
 
-            var puestoData = new CapaDato.ReportsQuery.ReportPuesto();
-            var result = puestoData.getPuesto();
+            var puestoData = new CD_Puesto();
+            var result = puestoData.Mostar();
 
             puestoLista = new List<PuestoDTO>();
             foreach (System.Data.DataRow row in result.Rows)
@@ -31,6 +33,7 @@ namespace CapaNegocio
                 };
                 puestoLista.Add(re);
             }
+            
 
         }
     }

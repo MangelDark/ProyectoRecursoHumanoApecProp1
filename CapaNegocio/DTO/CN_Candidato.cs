@@ -18,13 +18,13 @@ namespace CapaNegocio.DTO
         {
             return objeto.Mostrar();
         }
-        public void Insertar(string cedula, string nombre, string puestoAspira)
+        public void Insertar(string cedula, string nombre, string puestoAspira,string candidato,string salario)
         {
-            objeto.Insertar(cedula, nombre, puestoAspira);
+            objeto.Insertar(cedula, nombre, puestoAspira,Convert.ToInt32(candidato),Convert.ToDecimal(salario));
         }
-        public void Editar(string id, string cedula, string nombre, string puestoAspira)
+        public void Editar(string id, string cedula, string nombre, string puestoAspira, string candidato, string salario)
         {
-            objeto.Editar(Convert.ToInt32(id), cedula,nombre,puestoAspira);
+            objeto.Editar(Convert.ToInt32(id), cedula,nombre, puestoAspira,Convert.ToInt32(candidato), Convert.ToDecimal(salario));
         }
         public void Elimiar(string id)
         {
